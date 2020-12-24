@@ -1,9 +1,5 @@
 .navBar {
-  background: linear-gradient(
-    90deg,
-    rgb(110, 94, 254) 0%,
-    rgba(73, 63, 252, 100%)
-  );
+  background-color: rgb(24, 19, 19);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -15,13 +11,15 @@
     font-size: 2rem;
     font-weight: 700;
     color: white;
+    background-color: rgb(24, 19, 19);
     // cursor: pointer;
     margin-right: 5%;
-    margin-left: 5%;
+    // margin-left: 1%;
   }
 
   &__menu {
     display: grid;
+    background-color: rgb(24, 19, 19);
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
@@ -32,11 +30,13 @@
   }
 
   &__link {
+    background-color: rgb(24, 19, 19);
     color: white;
+    font-size: 1.5rem;
     text-decoration: none;
     padding: 0.5rem 1rem;
     &:hover {
-      background-color: #6d76f7;
+      background-color: rgb(46, 37, 37);
       border-radius: 4px;
       transition: all 0.2s ease-out;
     }
@@ -70,13 +70,13 @@
     }
     &__menu-active {
       position: absolute;
-      background: #6668f4;
+      background: rgb(24, 19, 19);
       width: 100%;
       top: 80px;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
-      //   z-index: 1;
+      z-index: 1;
     }
     &__link {
       text-align: center;
@@ -84,19 +84,22 @@
       width: 100%;
       display: table;
       &:hover {
-        background-color: #7577fa;
+        background-color: rgb(54, 19, 19);
         border-radius: 0;
       }
     }
 
     &__title {
+      background-color: rgb(20, 17, 17);
       position: absolute;
       top: 0;
       left: 0;
+      //   margin-left: 5%;
       transform: translate(25%, 50%);
     }
 
     &__menu-icon {
+      background-color: rgb(24, 19, 19);
       display: block;
       position: absolute;
       top: 0;
@@ -112,8 +115,3 @@
     font-size: 2rem;
   }
 }
-
-// .test {
-//   width: 90%;
-//   margin: 5% 5%;
-// }
