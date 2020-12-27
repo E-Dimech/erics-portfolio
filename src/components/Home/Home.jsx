@@ -8,8 +8,8 @@ function Home() {
       {/* <div>
         <img src={Computer} alt="computer monitor" className="test" />
       </div> */}
-      <p className="testtest">Hello,</p>
-      <p className="testtest1">I'm Eric,</p>
+      <p className="testtest">Helloz,</p>
+      <p className="testtest1">Helloz,</p>
       <p className="testtest2">fullstack developer.</p>
       <p className="testtest3">JavaScript / React / Express</p>
     </>
