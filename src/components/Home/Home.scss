@@ -1,12 +1,13 @@
+@import "../../Assets/Fonts/BioRhyme/BioRhyme-Regular.ttf";
 // .test {
 //   width: 96%;
 //   //   height: 1000px;
 //   margin: 5% 2%;
 //   position: relative;
 // }
-
 .testtest {
   color: whitesmoke;
+  font-family: "BioRhyme";
   font-size: 2rem;
   //   position: absolute;
   //   top: 20%;
@@ -16,6 +17,7 @@
 }
 .testtest1 {
   color: whitesmoke;
+  font-family: "SpaceMono";
   font-size: 2rem;
   margin-top: 5%;
   margin-left: 6%;
@@ -26,6 +28,7 @@
 
 .testtest2 {
   color: whitesmoke;
+  font-family: "SpaceMono";
   font-size: 2rem;
   margin-top: 5%;
   margin-left: 6%;
@@ -36,6 +39,7 @@
 
 .testtest3 {
   color: whitesmoke;
+  font-family: "SpaceMono";
   font-size: 1rem;
   margin-top: 7%;
   margin-left: 6%;
