@@ -1,0 +1,73 @@
+.contact-form {
+  padding: 10%;
+  box-sizing: border-box;
+  &__title {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2%;
+  }
+  //   position: relative;
+  &__label-user {
+    position: relative;
+  }
+  &__label-envelope {
+    position: relative;
+  }
+  &__label-comment {
+    position: relative;
+  }
+  &__input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    background: #323232;
+    margin: 7px 0;
+    border: 1px solid #00c1a8;
+    color: #00c1a8;
+    opacity: 0.5;
+    min-height: 50px;
+    text-shadow: none;
+  }
+  &__icon-user {
+    color: white;
+    background-color: transparent;
+    margin-top: 9px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 99;
+  }
+  &__icon-envelope {
+    color: white;
+    background-color: transparent;
+    margin-top: 9px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 99;
+  }
+  &__icon-comment {
+    color: white;
+    background-color: transparent;
+    top: 5%;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 99;
+  }
+  &__button {
+    width: 100%;
+    height: 50px;
+    color: #16f1d4;
+    font-size: 1.5rem;
+    padding: 0;
+    &:hover {
+      background: #00c1a8;
+      color: #fff;
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+}
+.fa-paper-plane {
+  margin-right: 10px;
+  background-color: transparent;
+}
