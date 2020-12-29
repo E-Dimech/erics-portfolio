@@ -2,5 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(32, 27, 27);
+  /* background-color: rgb(32, 27, 27); */
+  background-color: #3399ff;
+  background-color: #2f4454;
+  /* background-color: white; */
 }
+/* body {
+  background-color: rgb(32, 27, 27);
+} */
+/* .App {
+  background-color: grey;
+} */

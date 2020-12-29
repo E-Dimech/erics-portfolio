@@ -54,6 +54,7 @@ export default class Contact extends Component {
             <i className="contact-form__icon-user fa fa-user fa-2x"></i>
             <input
               className="contact-form__input"
+              placeholder="Name"
               type="text"
               name="name"
               value={this.state.name}
@@ -64,6 +65,7 @@ export default class Contact extends Component {
             <i className="contact-form__icon-envelope fa fa-envelope fa-2x"></i>
             <input
               className="contact-form__input"
+              placeholder="Email"
               type="email"
               name="email"
               value={this.state.email}
@@ -73,9 +75,10 @@ export default class Contact extends Component {
           <label className="contact-form__label-comment">
             <i className="contact-form__icon-comment fa fa-comment fa-2x"></i>
             <textarea
-              className="contact-form__input"
+              className="contact-form__input-msg"
+              placeholder="Message"
               cols="30"
-              rows="10"
+              rows="5"
               type="text"
               name="message"
               value={this.state.message}

@@ -11,6 +11,8 @@ function Home() {
       <p className="testtest">Hi,</p>
       <p className="testtest1">I'm Eric,</p>
       <p className="testtest2">fullstack developer.</p>
+      <p className="testtest4">fullstack developer.</p>
+      <p className="testtest5">fullstack developer.</p>
       <p className="testtest3">JavaScript / React / Express</p>
     </>
   );

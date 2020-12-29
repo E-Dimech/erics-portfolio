@@ -5,12 +5,14 @@ import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import NavBar from "./components/NavBar/NavBar";
+import Background from "./components/Background/Background";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <NavBar />
+        <Background />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />
