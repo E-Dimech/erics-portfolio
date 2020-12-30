@@ -1,5 +1,8 @@
 .circle {
+  z-index: 1;
   position: absolute;
+  //   width: 100%;
+  overflow: hidden;
   border-radius: 50%;
   background: white;
   animation: ripple 15s infinite;
@@ -21,6 +24,7 @@
 }
 
 .large {
+  overflow: hidden;
   width: 600px;
   height: 600px;
   left: -300px;
@@ -28,6 +32,7 @@
 }
 
 .xlarge {
+  overflow: hidden;
   width: 800px;
   height: 800px;
   left: -400px;
@@ -35,6 +40,7 @@
 }
 
 .xxlarge {
+  overflow: hidden;
   width: 1000px;
   height: 1000px;
   left: -500px;
