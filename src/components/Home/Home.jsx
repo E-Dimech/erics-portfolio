@@ -50,14 +50,20 @@ function Home() {
             <li>Snowboarder</li>
             <li>Tech Obsessed</li>
             <li>Animation Wizard</li>
-            <li>Roller Coaster Enthusiast</li>
+            <li>Coaster Enthusiast</li>
           </ul>
         </div>
       </h2>
-
-      <Link to="/contact" className="btn-slice">
-        <span>Contact Me</span>
-      </Link>
+      <div className="btn">
+        <Link to="/contact" className="btn-slice">
+          <div class="top">
+            <span>CONTACT ME</span>
+          </div>
+          <div class="bottom">
+            <span>CONTACT ME</span>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 }

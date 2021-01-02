@@ -22,11 +22,7 @@ class NavBar extends Component {
     return (
       <>
         <nav className="navBar">
-          {/* <video className="navBar__title" autoPlay loop muted>
-          <source src={LogoMP4} type="video/mp4" />
-        </video> */}
           <img src={Logo} className="navBar__title" alt="Eric's portfolio" />
-          {/* <h1 className="navBar__title">ERIC.</h1> */}
 
           <div className="navBar__menu-icon" onClick={this.handleClick}>
             <i
@@ -40,11 +36,6 @@ class NavBar extends Component {
           >
             {MenuItems.map((item, index) => {
               return (
-                //   <li key={index}>
-                //     <a className={item.cName} href={item.url}>
-                //       {item.title}
-                //     </a>
-                //   </li>
                 <li key={index}>
                   <Link to={item.url}>
                     <p className={item.cName}>{item.title}</p>
@@ -54,10 +45,6 @@ class NavBar extends Component {
             })}
           </ul>
         </nav>
-
-        {/* <div>
-          <img src={Computer} alt="computer monitor" className="test" />
-        </div> */}
       </>
     );
   }
