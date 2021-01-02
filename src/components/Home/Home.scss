@@ -3,21 +3,36 @@
 .home-greeting {
   position: absolute;
   z-index: 2;
-  margin-top: 15%;
+  margin-top: 10%;
   background-color: transparent;
   margin-left: 5%;
+  // min-height: 525px;
+  min-width: 405px;
+  &__logo {
+    width: 50px;
+    background-color: transparent;
+  }
 }
 
 h1 {
   background-color: transparent;
+  margin-bottom: 25px;
+  min-height: 205px;
+  max-height: 205px;
 }
 
 h2 {
   background-color: transparent;
-  margin-top: 6%;
+  margin-top: 10%;
+  // margin-bottom: 5%;
   color: #a2d6d1;
   font-family: "SpaceMono";
-  font-size: 1.2rem;
+  font-size: 1rem;
+  // display: inline;
+  // overflow: hidden;
+  // max-height: 20px;
+  min-height: 24px;
+  cursor: default;
 }
 
 .home-greeting__text {
@@ -31,12 +46,9 @@ h2 {
   display: inline-block;
   background-color: transparent;
   &:hover {
-    // z-index: 9999;
-    cursor: pointer;
+    cursor: default;
     -webkit-animation: jello-vertical 1.5s both;
     animation: jello-vertical 1.5s both;
-    // -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-    // animation: heartbeat 1.5s ease-in-out infinite both;
   }
   &:nth-child(7) {
     padding-right: 10px;
@@ -48,6 +60,91 @@ h2 {
     padding-right: 10px;
   }
 }
+
+.test {
+  margin-top: 2%;
+}
+
+.wordCarousel {
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: #98ff98;
+  &__text {
+    font-family: "SpaceMono";
+    background-color: transparent;
+  }
+  div {
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 65px;
+    padding-top: 10px;
+    margin-top: -10px;
+    ul {
+      background-color: transparent;
+    }
+    li {
+      background-color: transparent;
+      font-family: "spaceMono";
+      letter-spacing: 0.5px;
+      color: #98ff98;
+      font-weight: 500;
+      padding: 0 10px;
+      height: 45px;
+      margin-bottom: 45px;
+      display: block;
+    }
+  }
+}
+
+// Text Flipper Animation
+
+.flip5 {
+  animation: flip5 14s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@keyframes flip5 {
+  0% {
+    margin-top: -450px;
+  }
+  5% {
+    margin-top: -360px;
+  }
+  10% {
+    margin-top: -360px;
+  }
+  25% {
+    margin-top: -270px;
+  }
+  30% {
+    margin-top: -270px;
+  }
+  50% {
+    margin-top: -180px;
+  }
+  55% {
+    margin-top: -180px;
+  }
+  75% {
+    margin-top: -90px;
+  }
+  80% {
+    margin-top: -90px;
+  }
+  90% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -360px;
+  }
+}
+
+// Bouncing Text Animation
 
 @-webkit-keyframes jello-vertical {
   0% {
@@ -110,117 +207,18 @@ h2 {
   }
 }
 
-// @-webkit-keyframes heartbeat {
-//   from {
-//     -webkit-transform: scale(1);
-//     transform: scale(1);
-//     -webkit-transform-origin: center center;
-//     transform-origin: center center;
-//     -webkit-animation-timing-function: ease-out;
-//     animation-timing-function: ease-out;
-//   }
-//   10% {
-//     -webkit-transform: scale(0.91);
-//     transform: scale(0.91);
-//     -webkit-animation-timing-function: ease-in;
-//     animation-timing-function: ease-in;
-//   }
-//   17% {
-//     -webkit-transform: scale(0.98);
-//     transform: scale(0.98);
-//     -webkit-animation-timing-function: ease-out;
-//     animation-timing-function: ease-out;
-//   }
-//   33% {
-//     -webkit-transform: scale(0.87);
-//     transform: scale(0.87);
-//     -webkit-animation-timing-function: ease-in;
-//     animation-timing-function: ease-in;
-//   }
-//   45% {
-//     -webkit-transform: scale(1);
-//     transform: scale(1);
-//     -webkit-animation-timing-function: ease-out;
-//     animation-timing-function: ease-out;
-//   }
-// }
-// @keyframes heartbeat {
-//   from {
-//     -webkit-transform: scale(1);
-//     transform: scale(1);
-//     -webkit-transform-origin: center center;
-//     transform-origin: center center;
-//     -webkit-animation-timing-function: ease-out;
-//     animation-timing-function: ease-out;
-//   }
-//   10% {
-//     -webkit-transform: scale(0.91);
-//     transform: scale(0.91);
-//     -webkit-animation-timing-function: ease-in;
-//     animation-timing-function: ease-in;
-//   }
-//   17% {
-//     -webkit-transform: scale(0.98);
-//     transform: scale(0.98);
-//     -webkit-animation-timing-function: ease-out;
-//     animation-timing-function: ease-out;
-//   }
-//   33% {
-//     -webkit-transform: scale(0.87);
-//     transform: scale(0.87);
-//     -webkit-animation-timing-function: ease-in;
-//     animation-timing-function: ease-in;
-//   }
-//   45% {
-//     -webkit-transform: scale(1);
-//     transform: scale(1);
-//     -webkit-animation-timing-function: ease-out;
-//     animation-timing-function: ease-out;
-//   }
-// }
-
 .testtest {
   color: #ff69b4;
-  font-family: "BioRhyme";
-  font-size: 1.5rem;
-  // word-spacing: -5px;
-  //   position: absolute;
-  //   top: 20%;
-  margin-top: 2%;
-  margin-left: 6%;
-  //   left: 6%;
 }
+
 .testtest1 {
   color: #98ff98;
-  font-family: "BioRhyme";
-  font-size: 1.5rem;
-  // word-spacing: -5px;
-  margin-top: 5%;
-  margin-left: 6%;
-  //   position: absolute;
-  //   top: 25%;
-  //   left: 6%;
 }
 
 .testtest2 {
   color: #40e0d0;
-  font-family: "BioRhyme";
-  font-size: 2rem;
-  // word-spacing: -5px;
-  margin-top: 5%;
-  margin-left: 6%;
-  //   position: absolute;
-  //   top: 30%;
-  //   left: 6%;
 }
 
 .testtest3 {
   color: #ff69b4;
-  font-family: "BioRhyme";
-  font-size: 1.5rem;
-  margin-top: 6%;
-  margin-left: 6%;
-  //   position: absolute;
-  //   top: 36%;
-  //   left: 6%;
 }

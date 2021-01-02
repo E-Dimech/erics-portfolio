@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
+
 // import Computer from "../../Assets/Computer/PinClipart.com_computer-cpu-clipart_1324075.png";
 // // import Icon from "../../Assets/Icon/E Logo.gif";
-// import LogoMP4 from "../../Assets/Icon/E Logo.mp4";
+import Logo from "../../Assets/Icon/elogo.png";
 
 // import Test from "../../Assets/Icon/E Logo (1).png";
 import "./NavBar.scss";
@@ -24,8 +25,8 @@ class NavBar extends Component {
           {/* <video className="navBar__title" autoPlay loop muted>
           <source src={LogoMP4} type="video/mp4" />
         </video> */}
-          {/* <img src={Test} className="navBar__title" alt="Eric's portfolio" /> */}
-          <h1 className="navBar__title">ERIC.</h1>
+          <img src={Logo} className="navBar__title" alt="Eric's portfolio" />
+          {/* <h1 className="navBar__title">ERIC.</h1> */}
 
           <div className="navBar__menu-icon" onClick={this.handleClick}>
             <i

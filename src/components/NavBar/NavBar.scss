@@ -13,10 +13,11 @@
     font-weight: 700;
     color: white;
     // background-color: rgb(24, 19, 19);
-    background-color: #e2dfdf;
+    // background-color: #e2dfdf;
+    background-color: transparent;
     // cursor: pointer;
     margin-right: 5%;
-    // margin-left: 1%;
+    // margin-left: 5%;
   }
 
   &__menu {
@@ -101,7 +102,7 @@
       // background-color: rgb(20, 17, 17);
       background-color: #e2dfdf;
       position: absolute;
-      top: 0;
+      top: -19px;
       left: 0;
       //   margin-left: 5%;
       transform: translate(25%, 50%);
