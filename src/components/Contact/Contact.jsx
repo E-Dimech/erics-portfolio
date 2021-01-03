@@ -54,9 +54,30 @@ export default class Contact extends Component {
             OR TELL ME YOUR SECRETS
           </h3>
           <div className="contact-form__divider"></div>
+          <div className="contact-form__socials">
+            <a
+              className="contact-form__social-link"
+              href="https://linkedin.com/in/eric-dimech"
+            >
+              <i class="contact-form__social-icon fab fa-linkedin fa-3x"></i>
+            </a>
+            <a
+              className="contact-form__social-link"
+              href="https://github.com/E-Dimech"
+            >
+              <i class="contact-form__social-icon fab fa-github fa-3x"></i>
+            </a>
+            <a
+              className="contact-form__social-icon"
+              href="https://instagram.com/mountaintop86/"
+            >
+              <i class="contact-form__social-icon fab fa-instagram fa-3x"></i>
+            </a>
+          </div>
+          <div className="contact-form__divider"></div>
           <form
             id="contactForm"
-            className="contact_form_class"
+            className="contact-form__container"
             onSubmit={this.handleSubmit.bind(this)}
           >
             <label className="contact-form__label-user">

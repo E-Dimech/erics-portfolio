@@ -3,7 +3,7 @@
 // NavBar styling for tablet and desktop media
 
 .navBar {
-  background-color: #e2dfdf;
+  background-color: #b7f3ed;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -23,7 +23,7 @@
 
   &__menu {
     display: grid;
-    background-color: #e2dfdf;
+    background-color: #b7f3ed;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
@@ -34,15 +34,18 @@
   }
 
   &__link {
-    background-color: #e2dfdf;
-    color: white;
+    background-color: #b7f3ed;
+    color: #6e6d6d;
     font-size: 1.5rem;
+    font-family: "BioRhyme";
     text-decoration: none;
     padding: 0.5rem 1rem;
     z-index: 9;
     &:hover {
-      background-color: rgb(46, 37, 37);
-      border-radius: 4px;
+      // background-color: rgb(143, 57, 57);
+      // border-radius: 4px;
+      font-weight: 800;
+      color: white;
       transition: all 0.2s ease-out;
     }
   }
@@ -54,7 +57,7 @@
 
 .fa-bars {
   color: white;
-  background-color: #e2dfdf;
+  background-color: #b7f3ed;
   margin-top: 5px;
 }
 
@@ -76,7 +79,7 @@
 
     &__menu-active {
       position: absolute;
-      background-color: #e2dfdf;
+      background-color: #b7f3ed;
       width: 100%;
       top: 80px;
       left: 0;
@@ -97,7 +100,7 @@
     }
 
     &__title {
-      background-color: #e2dfdf;
+      // background-color: #e2dfdf;
       position: absolute;
       top: -21px;
       left: -15px;
@@ -105,7 +108,7 @@
     }
 
     &__menu-icon {
-      background-color: #e2dfdf;
+      background-color: #b7f3ed;
       display: block;
       position: absolute;
       top: 0;
@@ -117,7 +120,7 @@
   }
 
   .fa-times {
-    background-color: #e2dfdf;
+    background-color: #b7f3ed;
     color: #fff;
     font-size: 2rem;
   }
