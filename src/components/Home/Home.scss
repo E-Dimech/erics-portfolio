@@ -33,6 +33,9 @@ h2 {
   // max-height: 20px;
   min-height: 24px;
   cursor: default;
+  @include tablet {
+    margin-top: 19%;
+  }
 }
 
 .home-greeting__text {
@@ -59,10 +62,16 @@ h2 {
   &:nth-child(16) {
     padding-right: 10px;
   }
+  @include tablet {
+    font-size: 2.5rem;
+  }
 }
 
 .test {
   margin-top: 2%;
+  @include tablet {
+    margin-top: 5%;
+  }
 }
 
 .wordCarousel {
