@@ -22,7 +22,9 @@ class NavBar extends Component {
     return (
       <>
         <nav className="navBar">
-          <img src={Logo} className="navBar__title" alt="Eric's portfolio" />
+          <Link className="navBar__logo-link" to="/">
+            <img src={Logo} className="navBar__title" alt="Eric's portfolio" />
+          </Link>
 
           <div className="navBar__menu-icon" onClick={this.handleClick}>
             <i

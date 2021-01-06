@@ -19,6 +19,9 @@
     color: #fff;
     margin-bottom: 7%;
     text-align: center;
+    @include tablet {
+      font-size: 2rem;
+    }
   }
   &__divider {
     border-bottom: 3px solid #98ff98;

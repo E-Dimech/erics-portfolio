@@ -9,7 +9,11 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 1rem;
-
+  &__logo-link {
+    margin-left: 5%;
+    padding-bottom: 0;
+    background-color: transparent;
+  }
   &__title {
     justify-self: start;
     font-size: 2rem;
@@ -76,6 +80,9 @@
       left: -100%;
       opacity: 1;
     }
+    // &__link {
+    //   padding-bottom: 0;
+    // }
 
     &__menu-active {
       position: absolute;
