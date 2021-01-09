@@ -1,0 +1,111 @@
+@import "../../Styles/global";
+
+.about-me {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //   flex-wrap: nowrap;
+  align-items: center;
+  @include tablet {
+    // display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  &__statement {
+    font-family: "BioRhyme";
+    // margin-left: 5%;
+    margin-top: 8%;
+    font-size: 0.9rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: white;
+    max-width: 90%;
+    @include tablet {
+      line-height: 3rem;
+      font-size: 1.5rem;
+      max-width: 50%;
+    }
+    @include desktop {
+      line-height: 5rem;
+      font-size: 2rem;
+      max-width: 50%;
+    }
+  }
+  &__polaroid-a {
+    background: #ffffff;
+    display: inline-block;
+    margin-top: 10%;
+    max-width: 290px;
+    padding: 5px 5px 40px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    z-index: 100;
+    position: relative;
+    @include tablet {
+      //   margin: 5%;
+      max-width: 400px;
+      max-height: 280px;
+      padding: 10px 10px 40px;
+    }
+    @include desktop {
+      width: 435px;
+      max-width: 435px;
+      max-height: 400px;
+      padding: 10px 12px 40px;
+
+      //   max-height: 280px;
+    }
+    &:after {
+      color: rgb(107, 43, 43);
+      font-family: "SpaceMono";
+      font-size: 1rem;
+      content: attr(title);
+      position: relative;
+      top: 15px;
+    }
+    &:hover {
+      //   -webkit-transform: scale(1.2);
+      //   -moz-transform: scale(1.2);
+      // transform: scale(1.2);
+      transform: rotate(1.2);
+      -webkit-transform: rotate(-2deg);
+      -moz-transform: rotate(-2deg);
+      z-index: 10;
+      cursor: crosshair;
+      -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+      -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    }
+  }
+  &__polaroid-picture {
+    width: 260px;
+    max-width: 260px;
+    margin-top: 2%;
+    @include tablet {
+      width: 450px;
+      display: block;
+    }
+    @include desktop {
+      width: 410px;
+      max-width: 410px;
+    }
+    // margin-top: 5%;
+    // margin-left: 50%;
+  }
+  &__skills {
+    //   display: ;
+    // width: 100%;
+    // justify-content: flex-start;
+    text-align: center;
+    font-family: "BioRhyme";
+    font-size: 2rem;
+    color: black;
+    // z-index: 5000000;
+  }
+}
