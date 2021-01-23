@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import Computer from "../../Assets/Computer/pngfind.com-computer-screen-png-294307.png";
 import "./Home.scss";
 import Logo from "../../Assets/Icon/elogo.png";
 
@@ -8,25 +7,25 @@ import Logo from "../../Assets/Icon/elogo.png";
 function Home() {
   return (
     <div className="home-greeting">
-      <h1>
+      <div className="home-greeting__h1">
         <span className="home-greeting__text">H</span>
         <span className="home-greeting__text">i</span>
         <span className="home-greeting__text">,</span>
         <br></br>
-        <span className="home-greeting__text test">I</span>
-        <span className="home-greeting__text test">'</span>
-        <span className="home-greeting__text test">m</span>
-        <span className="home-greeting__text test">
+        <span className="home-greeting__text">I</span>
+        <span className="home-greeting__text">'</span>
+        <span className="home-greeting__text">m</span>
+        <span className="home-greeting__text">
           <img
             className="home-greeting__logo"
             src={Logo}
             alt="Eric Dimech Fullstack Developer"
           />
         </span>
-        <span className="home-greeting__text test">r</span>
-        <span className="home-greeting__text test">i</span>
-        <span className="home-greeting__text test">c</span>
-        <span className="home-greeting__text test">,</span>
+        <span className="home-greeting__text">r</span>
+        <span className="home-greeting__text">i</span>
+        <span className="home-greeting__text">c</span>
+        <span className="home-greeting__text">,</span>
         <br />
         <span className="home-greeting__text">w</span>
         <span className="home-greeting__text">e</span>
@@ -41,7 +40,7 @@ function Home() {
         <span className="home-greeting__text">e</span>
         <span className="home-greeting__text">r</span>
         <span className="home-greeting__text">.</span>
-      </h1>
+      </div>
       <h2 class="wordCarousel">
         <span className="wordCarousel__text">Fullstack Developer / </span>
         <div>
