@@ -1,20 +1,23 @@
 @import "../../Styles/global";
 
 .about-me {
+  margin-top: 15%;
   width: 100%;
   display: flex;
   flex-direction: column;
-  //   flex-wrap: nowrap;
   align-items: center;
+  // z-index: 3;
   @include tablet {
     // display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
+  @include desktop {
+    margin-top: 10%;
+  }
   &__statement {
     font-family: "BioRhyme";
-    // margin-left: 5%;
-    margin-top: 8%;
+    margin-top: 15%;
     font-size: 0.9rem;
     line-height: 2.5rem;
     text-align: center;
@@ -24,8 +27,10 @@
       line-height: 3rem;
       font-size: 1.5rem;
       max-width: 50%;
+      margin-top: 10%;
     }
     @include desktop {
+      margin-top: 8%;
       line-height: 5rem;
       font-size: 2rem;
       max-width: 50%;
@@ -58,8 +63,6 @@
       max-width: 435px;
       max-height: 400px;
       padding: 10px 12px 40px;
-
-      //   max-height: 280px;
     }
     &:after {
       color: rgb(107, 43, 43);
@@ -95,17 +98,292 @@
       width: 410px;
       max-width: 410px;
     }
-    // margin-top: 5%;
-    // margin-left: 50%;
   }
-  &__skills {
-    //   display: ;
-    // width: 100%;
-    // justify-content: flex-start;
+  &__cv-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  &__cv-download {
+    z-index: 1000;
+    background-color: transparent;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    color: white;
+  }
+  &__save {
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+  }
+  &__skills-title {
     text-align: center;
     font-family: "BioRhyme";
     font-size: 2rem;
-    color: black;
-    // z-index: 5000000;
+    color: white;
+    background-color: transparent;
+  }
+  &__skills-container {
+    // background-color: transparent;
+    margin-bottom: 20%;
+    display: flex;
+    width: 95%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+    z-index: 1000;
+    // z-index: 2;
+  }
+  &__skills-box {
+    z-index: 1000;
+    background-color: transparent;
+    flex: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    line-height: 0;
+    &:hover {
+      flex: 1 1 50%;
+    }
+  }
+  &__skills-img {
+    background-color: unset;
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: 0.5s;
+    &:hover {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__skills-name {
+    background-color: transparent;
+    font-size: 0.75rem;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    color: WHITE;
+    @include tablet {
+      font-size: 1.1rem;
+    }
+    @include desktop {
+      font-size: 2rem;
+    }
+  }
+}
+
+.test {
+  z-index: 3;
+  // margin-top: 10%;
+  // width: 100%;
+  // display: flex;
+  // flex-direction: column;
+  //   flex-wrap: nowrap;
+  // align-items: center;
+}
+
+.sign {
+  // margin-top: 5%;
+  // margin-bottom: 15%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  // height: 20%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  // top: 50%;
+  font-family: "BioRhyme";
+  // text-transform: uppercase;
+  font-size: 3em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff69b4,
+    -0.2rem 0.1rem 1rem #ff69b4, 0.2rem 0.1rem 1rem #ff69b4,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+  @include tablet {
+    font-size: 5rem;
+  }
+  @include desktop {
+    font-size: 6rem;
+  }
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
   }
 }
