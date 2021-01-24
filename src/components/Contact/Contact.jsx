@@ -56,13 +56,13 @@ export default class Contact extends Component {
           <div className="contact-form__divider"></div>
           <div className="contact-form__socials">
             <a
-              className="contact-form__social-link"
+              className="contact-form__social-icon"
               href="https://linkedin.com/in/eric-dimech"
             >
               <i class="contact-form__social-icon fab fa-linkedin fa-3x"></i>
             </a>
             <a
-              className="contact-form__social-link"
+              className="contact-form__social-icon"
               href="https://github.com/E-Dimech"
             >
               <i class="contact-form__social-icon fab fa-github fa-3x"></i>

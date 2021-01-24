@@ -4,8 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  // z-index: 10000;
 }
 .contact-form {
+  // z-index: 10000;
+
   padding: 10%;
   box-sizing: border-box;
   width: 100%;
@@ -31,17 +34,23 @@
     margin-left: 10%;
   }
   &__socials {
+    position: relative;
+    background-color: transparent;
     // width: 80%;
     display: flex;
     justify-content: space-evenly;
     // align-items: center;
     margin-bottom: 5%;
+    // z-index: 1000000;
   }
   &__social-icon {
+    background-color: transparent;
+
     color: #b7f3ed;
   }
   &__container {
     margin-top: 10%;
+    // z-index: 10000;
   }
   &__label-user {
     position: relative;
@@ -144,13 +153,14 @@
     width: 100%;
     height: 50px;
     color: white;
+    background-color: transparent;
     font-size: 1.5rem;
     font-family: "BioRhyme";
     padding: 0;
     border: 3px solid #b7f3ed;
     border-radius: 10px;
-    // z-index: 1000;
-    // position: relative;
+    // z-index: 1;
+    position: relative;
     &:hover {
       background: #b7f3ed;
       color: #fff;
