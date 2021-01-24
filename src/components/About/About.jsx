@@ -12,6 +12,7 @@ import "./About.scss";
 function About() {
   return (
     <div className="test">
+      <h1>TESTTTTTING</h1>
       <div class="sign">
         <span class="fast-flicker">b</span>onj<span class="flicker">o</span>ur
       </div>
