@@ -16,12 +16,17 @@
     margin-top: 10%;
   }
   &__statement {
-    font-family: "BioRhyme";
+    // font-family: "PatrickHand";
+
+    font-family: "BreeSerif";
+    // font-family: "SpecialElite";
+    letter-spacing: 2px;
+    // font-family: "GloriaHallelujah";
     margin-top: 15%;
     font-size: 0.9rem;
     line-height: 2.5rem;
     text-align: center;
-    color: white;
+    color: #b7f3ed;
     max-width: 90%;
     @include tablet {
       line-height: 3rem;
@@ -37,6 +42,7 @@
     }
   }
   &__polaroid-a {
+    border-radius: 10px;
     background: #ffffff;
     display: inline-block;
     margin-top: 10%;
@@ -66,7 +72,7 @@
     }
     &:after {
       color: rgb(107, 43, 43);
-      font-family: "SpaceMono";
+      font-family: "ArchitectsDaughter";
       font-size: 1rem;
       content: attr(title);
       position: relative;
@@ -87,6 +93,7 @@
     }
   }
   &__polaroid-picture {
+    border-radius: 10px;
     width: 260px;
     max-width: 260px;
     margin-top: 2%;
@@ -107,23 +114,32 @@
   &__cv-download {
     z-index: 1000;
     background-color: transparent;
-    margin-top: 5%;
+    // margin-top: 5%;
+    // font-family: "ArchitectsDaughter";
     font-size: 1.5rem;
     color: white;
   }
   &__save {
     background-color: transparent;
-    color: white;
+    // color: #b7f3ed;
+    color: #98ff98;
     font-size: 2rem;
+    // font-family: "ArchitectsDaughter";
   }
   &__skills-title {
     text-align: center;
-    font-family: "BioRhyme";
+    font-family: "ArchitectsDaughter";
     font-size: 2rem;
-    color: white;
+    color: #ff2483;
+    position: relative;
     background-color: transparent;
+    margin-top: 10%;
+    @include desktop {
+      font-size: 3rem;
+    }
   }
   &__skills-container {
+    // position: relative;
     // background-color: transparent;
     margin-bottom: 20%;
     display: flex;
@@ -161,6 +177,8 @@
   &__skills-name {
     background-color: transparent;
     font-size: 0.75rem;
+    font-family: "ArchitectsDaughter";
+
     display: block;
     text-align: center;
     height: 10vh;
@@ -193,6 +211,7 @@
   justify-content: center;
   align-items: center;
   width: 30%;
+  background-color: transparent;
   // height: 20%;
   background-image: radial-gradient(
     ellipse 50% 35% at 50% 50%,
@@ -203,7 +222,9 @@
   letter-spacing: 2;
   left: 50%;
   // top: 50%;
-  font-family: "BioRhyme";
+  font-family: "ArchitectsDaughter";
+  // font-family: "BreeSerif";
+  // font-family: "SpecialElite";
   // text-transform: uppercase;
   font-size: 3em;
   color: #ffe6ff;
@@ -385,5 +406,19 @@
 
   to {
     opacity: 1;
+  }
+}
+
+.texxxt {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "BreeSerif";
+  font-weight: 500;
+  letter-spacing: 2px;
+  // color: #b7f3ed;
+  color: #98ff98;
+  @include tablet {
+    font-size: 2rem;
+    // color: #b7f3ed;
   }
 }

@@ -10,7 +10,16 @@
   min-width: 405px;
   &__logo {
     width: 50px;
+    // height: 200px;
+    // margin-bottom: 50px;
     background-color: transparent;
+  }
+}
+
+.extra {
+  margin-bottom: 15px;
+  @include tablet {
+    margin-bottom: 10px;
   }
 }
 
@@ -25,9 +34,9 @@ h2 {
   background-color: transparent;
   margin-top: 10%;
   // margin-bottom: 5%;
-  color: #a2d6d1;
-  font-family: "SpaceMono";
-  font-size: 1rem;
+  // color: #a2d6d1;
+  // font-family: "SpecialElite";
+  // font-size: 1rem;
   // display: inline;
   // overflow: hidden;
   // max-height: 20px;
@@ -41,10 +50,18 @@ h2 {
 .home-greeting__text {
   font-size: 1.9rem;
   letter-spacing: 5px;
-  color: #98ff98;
+  height: 80px;
+  // color: #98ff98;
   color: #b7f3ed;
-  font-family: "BioRhyme";
-  margin-top: 5%;
+  // font-family: "PatrickHand";
+  // font-family: "GloriaHallelujah";
+  // font-family: "SpecialElite";
+  // font-family: "ArchitectsDaughter";
+  // font-family: "Monda";
+  font-family: "BreeSerif";
+  font-weight: 400;
+  // margin-top: 5%;
+  // margin-bottom: 5%;
   opacity: 1;
   display: inline-block;
   background-color: transparent;
@@ -76,11 +93,17 @@ h2 {
 
 .wordCarousel {
   background-color: transparent;
-  font-size: 1.5rem;
+  font-size: .95rem;
+  width: 78.5%;
   font-weight: 100;
   color: #98ff98;
+  @include tablet {
+    font-size: 1.5rem;
+    width: 100%;
+  }
   &__text {
-    font-family: "SpaceMono";
+    // font-family: "Fogie";
+    font-family: "ArchitectsDaughter";
     background-color: transparent;
   }
   div {
@@ -97,21 +120,25 @@ h2 {
     }
     li {
       background-color: transparent;
-      font-family: "spaceMono";
+      // font-family: "spaceMono";
+      font-family: "ArchitectsDaughter";
       letter-spacing: 0.5px;
       color: #98ff98;
       font-weight: 500;
-      padding: 0 10px;
+      padding: 0 17px 0 0;
       height: 45px;
       margin-bottom: 45px;
       display: block;
+      @include tablet{
+        padding: 0 10px;
+      } 
     }
   }
 }
 .btn {
   // Set margin top to 5% for tab/desk
   background-color: transparent;
-  font-family: "SpaceMono";
+  font-family: "BreeSerif";
   margin-top: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,11 +148,11 @@ h2 {
 .btn-slice {
   background-color: transparent;
 	padding: 1.2rem 2.5rem;
-  border: 2px solid #ffffff;
+  border: 2px solid #b7f3ed;
 	border-radius: 0rem;
-	color: #ffffff;
+	color: #b7f3ed;
   font-size: 0.6875rem;
-  font-family: "SpaceMono";
+  font-family: "BreeSerif";
 	font-weight: 700;
 	letter-spacing: 0.3rem;
   position: relative;
@@ -232,7 +259,7 @@ span {
   background-color: transparent;
 	height: 1px;
 	width: 60px;
-	background-color: #ffffff;
+	background-color: #b7f3ed;
 	position: absolute;
 	margin-top: 8px;
 	right: -35px;

@@ -12,20 +12,20 @@ function Home() {
         <span className="home-greeting__text">i</span>
         <span className="home-greeting__text">,</span>
         <br></br>
-        <span className="home-greeting__text">I</span>
-        <span className="home-greeting__text">'</span>
-        <span className="home-greeting__text">m</span>
-        <span className="home-greeting__text">
+        <span className="home-greeting__text extra">I</span>
+        <span className="home-greeting__text extra">'</span>
+        <span className="home-greeting__text extra">m</span>
+        <span className="home-greeting__text extra">
           <img
             className="home-greeting__logo"
             src={Logo}
             alt="Eric Dimech Fullstack Developer"
           />
         </span>
-        <span className="home-greeting__text">r</span>
-        <span className="home-greeting__text">i</span>
-        <span className="home-greeting__text">c</span>
-        <span className="home-greeting__text">,</span>
+        <span className="home-greeting__text extra">r</span>
+        <span className="home-greeting__text extra">i</span>
+        <span className="home-greeting__text extra">c</span>
+        <span className="home-greeting__text extra">,</span>
         <br />
         <span className="home-greeting__text">w</span>
         <span className="home-greeting__text">e</span>

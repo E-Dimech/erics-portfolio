@@ -26,7 +26,7 @@ function About() {
 
         <a
           className="about-me__polaroid-a"
-          href="/"
+          href="/contact"
           title="Wineglass Bay, Tasmania."
         >
           <img
@@ -42,10 +42,12 @@ function About() {
           href="/resume/test.pdf"
           download="test.pdf"
         >
-          <i class="about-me__save far fa-save">&nbsp; Download CV</i>
+          <i class="about-me__save far fa-save">
+            <span className="texxxt">&nbsp; Download CV</span>
+          </i>
         </a>
       </div>
-      <h2 className="about-me__skills-title">----- SKILLS ------</h2>
+      <h2 className="about-me__skills-title">- SKILLS -</h2>
       <div className="about-me__skills-container">
         <div className="about-me__skills-box">
           <img className="about-me__skills-img" src={CssLogo} alt="" />
