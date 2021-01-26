@@ -1,4 +1,6 @@
 import React from "react";
+import MediaQuery from "react-responsive";
+
 import Eric from "../../Assets/Images/IMG_0499.jpg";
 import HtmlLogo from "../../Assets/Images/htmlLogo.svg";
 import FireLogo from "../../Assets/Images/FirebaseLogo.png";
@@ -7,6 +9,7 @@ import ReactLogo from "../../Assets/Images/ReactLogo.png";
 import NodeLogo from "../../Assets/Images/NodeLogo.png";
 import JSLogo from "../../Assets/Images/JavascriptLogo.png";
 import CssLogo from "../../Assets/Images/cssLogo.svg";
+
 import "./About.scss";
 
 function About() {
@@ -48,36 +51,132 @@ function About() {
         </a>
       </div>
       <h2 className="about-me__skills-title">- SKILLS -</h2>
-      <div className="about-me__skills-container">
-        <div className="about-me__skills-box">
-          <img className="about-me__skills-img" src={CssLogo} alt="" />
-          <p className="about-me__skills-name">CSS</p>
+      <MediaQuery minDeviceWidth={1200}>
+        <div className="about-me__skills-container">
+          <div className="about-me__skills-box">
+            <img className="about-me__skills-img" src={CssLogo} alt="" />
+            <p className="about-me__skills-name">CSS</p>
+          </div>
+          <div className="about-me__skills-box">
+            <img className="about-me__skills-img" src={NodeLogo} alt="" />
+            <p className="about-me__skills-name">Node</p>
+          </div>
+          <div className="about-me__skills-box">
+            <img className="about-me__skills-img" src={FireLogo} alt="" />
+            <p className="about-me__skills-name">Firebase</p>
+          </div>
+          <div className="about-me__skills-box">
+            <img className="about-me__skills-img" src={ReactLogo} alt="" />
+            <p className="about-me__skills-name">React</p>
+          </div>
+          <div className="about-me__skills-box">
+            <img className="about-me__skills-img" src={JSLogo} alt="" />
+            <p className="about-me__skills-name">JavaScript</p>
+          </div>
+          <div className="about-me__skills-box">
+            <img className="about-me__skills-img" src={SassLogo} alt="" />
+            <p className="about-me__skills-name">SASS</p>
+          </div>
+          <div className="about-me__skills-box">
+            <img className="about-me__skills-img" src={HtmlLogo} alt="" />
+            <p className="about-me__skills-name">HTML</p>
+          </div>
         </div>
-        <div className="about-me__skills-box">
-          <img className="about-me__skills-img" src={NodeLogo} alt="" />
-          <p className="about-me__skills-name">Node</p>
+      </MediaQuery>
+      <MediaQuery maxDeviceWidth={1199}>
+        <div>
+          <ul id="hexGrid">
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" href="/">
+                  <img src={HtmlLogo} alt="" />
+                  <h1>HTML5</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" href="/">
+                  <img src={FireLogo} alt="" />
+                  <h1>Firebase</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" href="/">
+                  <img src={SassLogo} alt="" />
+                  <h1>SASS</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" href="/">
+                  <img src={ReactLogo} alt="" />
+                  <h1>React</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" href="/">
+                  <img src={NodeLogo} alt="" />
+                  <h1>Node.js</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" href="/">
+                  <img src={JSLogo} alt="" />
+                  <h1>JavaScript</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" href="/">
+                  <img src={CssLogo} alt="" />
+                  <h1>CSS3</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+            <li class="hex">
+              <div class="hexIn">
+                <a class="hexLink" href="/">
+                  <img src="" alt="" />
+                  <h1>This is a title</h1>
+                  <p>
+                    Some sample text about the article this hexagon leads to
+                  </p>
+                </a>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div className="about-me__skills-box">
-          <img className="about-me__skills-img" src={FireLogo} alt="" />
-          <p className="about-me__skills-name">Firebase</p>
-        </div>
-        <div className="about-me__skills-box">
-          <img className="about-me__skills-img" src={ReactLogo} alt="" />
-          <p className="about-me__skills-name">React</p>
-        </div>
-        <div className="about-me__skills-box">
-          <img className="about-me__skills-img" src={JSLogo} alt="" />
-          <p className="about-me__skills-name">JavaScript</p>
-        </div>
-        <div className="about-me__skills-box">
-          <img className="about-me__skills-img" src={SassLogo} alt="" />
-          <p className="about-me__skills-name">SASS</p>
-        </div>
-        <div className="about-me__skills-box">
-          <img className="about-me__skills-img" src={HtmlLogo} alt="" />
-          <p className="about-me__skills-name">HTML</p>
-        </div>
-      </div>
+      </MediaQuery>
     </div>
   );
 }
