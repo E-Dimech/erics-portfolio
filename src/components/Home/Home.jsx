@@ -44,9 +44,9 @@ function Home() {
       <h2 class="wordCarousel">
         <span className="wordCarousel__text">Fullstack Developer / </span>
         <div>
-          <ul class="flip5">
+          <ul class="flip4">
             <li>React Expert</li>
-            <li>Snowboarder</li>
+            {/* <li>Snowboarder</li> */}
             <li>Tech Obsessed</li>
             <li>Animation Wizard</li>
             <li>Coaster Enthusiast</li>
