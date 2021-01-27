@@ -9,6 +9,7 @@ import ReactLogo from "../../Assets/Images/ReactLogo.png";
 import NodeLogo from "../../Assets/Images/NodeLogo.png";
 import JSLogo from "../../Assets/Images/JavascriptLogo.png";
 import CssLogo from "../../Assets/Images/cssLogo.svg";
+import Guac from "../../Assets/Images/guacamole.png";
 
 import "./About.scss";
 
@@ -88,95 +89,81 @@ function About() {
           <ul id="hexGrid">
             <li class="hex">
               <div class="hexIn">
-                <a class="hexLink" href="/">
+                <div class="hexLink">
                   <img src={HtmlLogo} alt="" />
                   <h1>HTML5</h1>
-                  <p>
-                    Some sample text about the article this hexagon leads to
-                  </p>
-                </a>
+                  <p>Proficiency: Expert</p>
+                </div>
               </div>
             </li>
             <li class="hex">
               <div class="hexIn">
-                <a class="hexLink" href="/">
+                <div class="hexLink">
                   <img src={FireLogo} alt="" />
                   <h1>Firebase</h1>
-                  <p>
-                    Some sample text about the article this hexagon leads to
-                  </p>
-                </a>
+                  <p>Proficiency: Intermediate</p>
+                </div>
               </div>
             </li>
             <li class="hex">
               <div class="hexIn">
-                <a class="hexLink" href="/">
+                <div class="hexLink">
                   <img src={SassLogo} alt="" />
                   <h1>SASS</h1>
-                  <p>
-                    Some sample text about the article this hexagon leads to
-                  </p>
-                </a>
+                  <p>Proficiency: Expert</p>
+                </div>
               </div>
             </li>
             <li class="hex">
               <div class="hexIn">
-                <a class="hexLink" href="/">
+                <div class="hexLink">
                   <img src={ReactLogo} alt="" />
                   <h1>React</h1>
-                  <p>
-                    Some sample text about the article this hexagon leads to
-                  </p>
-                </a>
+                  <p>Proficiency: Advanced</p>
+                </div>
               </div>
             </li>
             <li class="hex">
               <div class="hexIn">
-                <a class="hexLink" href="/">
+                <div class="hexLink">
                   <img src={NodeLogo} alt="" />
                   <h1>Node.js</h1>
-                  <p>
-                    Some sample text about the article this hexagon leads to
-                  </p>
-                </a>
+                  <p>Proficiency: Intermediate</p>
+                </div>
               </div>
             </li>
             <li class="hex">
               <div class="hexIn">
-                <a class="hexLink" href="/">
+                <div class="hexLink">
                   <img src={JSLogo} alt="" />
                   <h1>JavaScript</h1>
-                  <p>
-                    Some sample text about the article this hexagon leads to
-                  </p>
-                </a>
+                  <p>Proficiency: Advanced</p>
+                </div>
               </div>
             </li>
             <li class="hex">
               <div class="hexIn">
-                <a class="hexLink" href="/">
+                <div class="hexLink">
                   <img src={CssLogo} alt="" />
                   <h1>CSS3</h1>
-                  <p>
-                    Some sample text about the article this hexagon leads to
-                  </p>
-                </a>
+                  <p>Proficiency: Expert</p>
+                </div>
               </div>
             </li>
             <li class="hex">
               <div class="hexIn">
-                <a class="hexLink" href="/">
-                  <img src="" alt="" />
-                  <h1>This is a title</h1>
+                <div class="hexLink">
+                  <img src={Guac} alt="" />
+                  <h1>Guacamole</h1>
                   <p>
-                    Some sample text about the article this hexagon leads to
+                    Not a technology but I am an expert connoisseur and
+                    craftsperson.
                   </p>
-                </a>
+                </div>
               </div>
             </li>
           </ul>
         </div>
-        <h2>hskdufhdksufhds</h2>
       </MediaQuery>
     </div>
   );

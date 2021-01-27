@@ -19,7 +19,7 @@
     font-family: "BreeSerif";
     letter-spacing: 2px;
     margin-top: 15%;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     line-height: 2.5rem;
     text-align: center;
     color: #b7f3ed;
@@ -123,12 +123,15 @@
   &__skills-title {
     text-align: center;
     font-family: "ArchitectsDaughter";
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #ff2483;
     position: relative;
     background-color: transparent;
     margin-top: 10%;
     margin-bottom: 10%;
+    @include tablet {
+      font-size: 3.5rem;
+    }
     @include desktop {
       font-size: 5rem;
       margin-bottom: 5%;
