@@ -1,12 +1,11 @@
 import React from "react";
 
-// import deact from "../../Assets/Images/FirebaseLogo.png";
 import "./Projects.scss";
 
 function Projects() {
   return (
     <div class="container">
-      <div className="test">
+      <div className="tesssst">
         {/* <h3 class="title">Text fadeIn bottom</h3> */}
         <div class="content">
           <a href="/">

@@ -176,6 +176,7 @@ function About() {
             </li>
           </ul>
         </div>
+        <h2>hskdufhdksufhds</h2>
       </MediaQuery>
     </div>
   );
