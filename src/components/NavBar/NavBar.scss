@@ -100,9 +100,8 @@
       padding: 1rem;
       width: 100%;
       display: table;
-      background-color: #b7f3ed;
       &:hover {
-        // background-color: #051418;
+        background-color: #051418;
         border-radius: 0;
       }
     }
@@ -136,5 +135,4 @@
 
 a {
   text-decoration: none;
-  background-color: #b7f3ed;
 }
