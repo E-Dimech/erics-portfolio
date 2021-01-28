@@ -1,4 +1,8 @@
 import React from "react";
+import traxpic from "../../Assets/Images/traxSrnshoot.png";
+import reelspic from "../../Assets/Images/reelsSrnShot.png";
+// import seniorpic from "../../Assets/Images/seniorCare.jpg";
+import brainflixpic from "../../Assets/Images/brainFlix.png";
 
 import "./Projects.scss";
 
@@ -6,65 +10,95 @@ function Projects() {
   return (
     <div class="container">
       <div className="tesssst">
-        {/* <h3 class="title">Text fadeIn bottom</h3> */}
         <div class="content">
           <a href="/">
             <div class="content-overlay"></div>
-            <img
-              alt=""
-              class="content-image"
-              src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
-            />
+            <img alt="" class="content-image" src={traxpic} />
             <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-              <p class="content-text">This is a short description</p>
+              <h3 class="content-title">TRAX</h3>
+              <p class="content-text">
+                With access to a database including every coaster on the planet,
+              </p>
+              <p class="content-text">
+                users can keep track of their riding experiences commonly known
+                as “coaster credits!”
+              </p>
+              <div className="container-link-wrp">
+                <a
+                  className="content-link"
+                  href="https://github.com/E-Dimech/trax"
+                >
+                  <i class="contact-form__social-icon fab fa-github fa-2x"></i>
+                </a>
+                {/* <a className="content-link" href="www.ericdimech.ca">
+                  <i class="contact-form__social-icon fas fa-link fa-2x"></i>
+                </a> */}
+              </div>
             </div>
           </a>
         </div>
         <div class="content">
           <a href="/">
             <div class="content-overlay"></div>
-            <img
-              alt=""
-              class="content-image"
-              src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
-            />
+            <img alt="" class="content-image" src={reelspic} />
             <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </a>
-        </div>
-        <div class="content">
-          <a href="/">
-            <div class="content-overlay"></div>
-            <img
-              alt=""
-              class="content-image"
-              src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
-            />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">This is a title</h3>
-              <p class="content-text">This is a short description</p>
-              <p class="content-text">This is a short description</p>
+              <h3 class="content-title">Movie Reels</h3>
+              <p class="content-text">
+                Search through a large movie database and
+              </p>
+              <p class="content-text">
+                "nominate" your top five favourite films!
+              </p>
+              <div className="container-link-wrp">
+                <a
+                  className="content-link"
+                  href="https://github.com/E-Dimech/TheShoppiesDevChallenge"
+                >
+                  <i class="contact-form__social-icon fab fa-github fa-2x"></i>
+                </a>
+                <a
+                  className="content-link"
+                  href="https://ericdimechsummer2021webdevchallenge.netlify.app/"
+                >
+                  <i class="contact-form__social-icon fas fa-link fa-2x"></i>
+                </a>
+              </div>
             </div>
           </a>
         </div>
 
+        {/* <div class="content">
+          <a href="/">
+            <div class="content-overlay"></div>
+            <img alt="" class="content-image" src={seniorpic} />
+            <div class="content-details fadeIn-bottom">
+              <h3 class="content-title">Substitute Daughter</h3>
+              <p class="content-text">This is a short description</p>
+              <p class="content-text">This is a short description</p>
+            </div>
+          </a>
+        </div> */}
         <div class="content">
           <a href="/">
             <div class="content-overlay"></div>
-            <img
-              alt=""
-              class="content-image"
-              src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362"
-            />
+            <img alt="" class="content-image" src={brainflixpic} />
             <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Guacamole</h3>
-              <p class="content-text">Not a technology but I am an expert</p>
-              <p class="content-text">Ask me for my recipe!</p>
+              <h3 class="content-title">BrainFlix</h3>
+              <p class="content-text">Video player app inspired by Youtube</p>
+              {/* <p class="content-text">
+                "nominate" your top five favourite films!
+              </p> */}
+              <div className="container-link-wrp">
+                <a
+                  className="content-link"
+                  href="https://github.com/E-Dimech/eric-dimech-brainflix/tree/master/sprint-3"
+                >
+                  <i class="contact-form__social-icon fab fa-github fa-2x"></i>
+                </a>
+                <a className="content-link" href="www.ericdimech.ca">
+                  <i class="contact-form__social-icon fas fa-link fa-2x"></i>
+                </a>
+              </div>
             </div>
           </a>
         </div>

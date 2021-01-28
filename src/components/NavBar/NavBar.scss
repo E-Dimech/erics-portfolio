@@ -80,8 +80,8 @@
       left: -100%;
       opacity: 1;
     }
-    // &__link {
-    //   padding-bottom: 0;
+    // &__menu-link {
+    //   background-color: #054b44;
     // }
 
     &__menu-active {
@@ -101,13 +101,14 @@
       width: 100%;
       display: table;
       &:hover {
+        border: #b7f3ed;
+        color: #b7f3ed;
         background-color: #051418;
         border-radius: 0;
       }
     }
 
     &__title {
-      // background-color: #e2dfdf;
       position: absolute;
       top: -21px;
       left: -15px;
@@ -131,6 +132,9 @@
     color: #fff;
     font-size: 2rem;
   }
+  // .menu-link {
+  //   background-color: #054b44;
+  // }
 }
 
 a {

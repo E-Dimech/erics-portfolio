@@ -14,13 +14,27 @@
   //   align-content: space-between;
   flex-wrap: wrap;
 }
+.container-link-wrp {
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.content-link {
+  width: 10%;
+  cursor: grab;
+}
 
-// @media screen and (max-width: 640px) {
-//   .container {
-//     display: block;
-//     width: 100%;
-//   }
-// }
+@media screen and (max-width: 766px) {
+  .tesssst {
+    display: block;
+    width: 100%;
+  }
+
+  // .content {
+  //   width: 80%;
+  // }
+}
 
 // @media screen and (min-width: 900px) {
 //   .container {
@@ -35,23 +49,28 @@
 }
 
 .content {
+  width: 80%;
+  border-radius: 5px;
   position: relative;
-  width: 35%;
-  //   max-width: 400px;
   margin: 40px auto;
   overflow: hidden;
+  @include tablet {
+    width: 35%;
+    // max-height: 400px;
+  }
 }
 
 .content .content-overlay {
   background: rgba(248, 240, 240, 0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
   opacity: 0;
+  // border-radius: 5px;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
@@ -63,6 +82,9 @@
 
 .content-image {
   width: 100%;
+  height: 100%;
+  border: 5px solid white;
+  border-radius: 5px;
 }
 
 .content-details {
@@ -71,7 +93,7 @@
   padding-left: 1em;
   padding-right: 1em;
   width: 100%;
-  height: 50%;
+  height: 90%;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -81,10 +103,24 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  @include tablet {
+    height: 40%;
+  }
 }
 
 .content-title {
   margin-top: 20px;
+  font-family: "BreeSerif";
+  font-size: 2rem;
+}
+
+.content-text {
+  font-family: "BreeSerif";
+  color: white;
+  font-size: 0.9rem;
+  @include tablet {
+    font-size: 1.1rem;
+  }
 }
 
 .content:hover .content-details {
@@ -101,10 +137,10 @@
   text-transform: uppercase;
 }
 
-.content-details p {
-  color: #fff;
-  font-size: 0.8em;
-}
+// .content-details p {
+//   color: #fff;
+//   font-size: 0.8em;
+// }
 
 .fadeIn-bottom {
   top: 80%;

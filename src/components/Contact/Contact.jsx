@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import emailjs from "emailjs-com";
-// import { render } from "node-sass";
 import "./Contact.scss";
 
 export default class Contact extends Component {
@@ -44,9 +43,6 @@ export default class Contact extends Component {
   render() {
     return (
       <div className="contact-section">
-        {/* <div>
-          <h2>contact me</h2>
-        </div> */}
         <div className="contact-form">
           <h3 className="contact-form__title">
             HIRE ME, <br />
@@ -124,46 +120,3 @@ export default class Contact extends Component {
     );
   }
 }
-
-// export default function ContactUs() {
-//   function sendEmail(e) {
-//     e.preventDefault();
-
-//     emailjs
-//       .sendForm(
-//         "service_e11i9gm",
-//         "template_m1onodf",
-//         e.target,
-//         "user_h6ZZ3jPTlgQHKcvFnFsYg"
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//         },
-//         (error) => {
-//           console.log(error.text);
-//         }
-//       );
-//       this.setState({
-//         name: "",
-//         email: "",
-//         message: "",
-//       });
-//   };
-//   render() {
-//   return (
-//   <>
-//     <form className="contact-form" onSubmit={sendEmail}>
-//       <input type="hidden" name="contact_number" />
-//       <label>Name</label>
-//       <input type="text" name="user_name" />
-//       <label>Email</label>
-//       <input type="email" name="user_email" />
-//       <label>Message</label>
-//       <textarea name="message" />
-//       <input type="submit" value="Send" />
-//     </form>
-//   </>
-//   );
-//   }
-// }
