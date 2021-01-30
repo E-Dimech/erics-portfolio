@@ -61,11 +61,11 @@ h2 {
 }
 
 .home-greeting__text {
-  font-size: 1.9rem;
+  font-size: 2.25rem;
   letter-spacing: 5px;
   height: 80px;
   // color: #98ff98;
-  color: #b7f3ed;
+  color: whitesmoke;
   font-family: "BreeSerif";
   font-weight: 400;
   // margin-top: 5%;
@@ -75,6 +75,7 @@ h2 {
   background-color: transparent;
   &:hover {
     cursor: default;
+    color: #45eeff;
     -webkit-animation: jello-vertical 1.5s both;
     animation: jello-vertical 1.5s both;
   }
@@ -105,8 +106,12 @@ h2 {
   
   width: 78.5%;
   font-weight: 100;
-  color: #45eeff;
+  // color: #45eeff;
+  color: #ff69b4;
+  color: #050a17;
   @include tablet {
+    color: #45eeff;
+
     font-size: 1.5rem;
     width: 100%;
   }
@@ -157,9 +162,9 @@ h2 {
   margin-top: 5%;
   background-color: transparent;
 	padding: 1.2rem 2.5rem;
-  border: 2px solid #051418;
+  border: 2px solid #050a17;
 	border-radius: 0rem;
-	color: #051418;
+	color: #050a17;
   font-size: 0.6875rem;
   font-family: "BreeSerif";
 	font-weight: 700;
@@ -273,7 +278,7 @@ span {
   background-color: transparent;
 	height: 1px;
 	width: 60px;
-	background-color: #051418;
+	background-color: #050a17;
 	position: absolute;
 	margin-top: 8px;
 	right: -35px;
