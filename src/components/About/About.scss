@@ -22,7 +22,7 @@
     font-size: 1.1rem;
     line-height: 2.5rem;
     text-align: center;
-    color: #b7f3ed;
+    color: whitesmoke;
     max-width: 90%;
     @include tablet {
       line-height: 3rem;
@@ -125,6 +125,7 @@
     font-family: "ArchitectsDaughter";
     font-size: 2.5rem;
     color: #ff2483;
+    font-weight: 800;
     position: relative;
     background-color: transparent;
     margin-top: 10%;

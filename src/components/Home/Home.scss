@@ -116,9 +116,9 @@ h2 {
   margin-top: 4%;
   width: 78.5%;
   font-weight: 500;
-  // color: #45eeff;
+  color: #45eeff;
   // color: #ff69b4;
-  color: #050a17;
+  // color: #050a17;
   @include tablet {
     margin-top: 13%;
     color: #45eeff;
@@ -153,8 +153,8 @@ h2 {
       background-color: transparent;
       font-family: "ArchitectsDaughter";
       letter-spacing: 0.5px;
-      color: #050a17;
-      // color: #45eeff;
+      // color: #050a17;
+      color: #45eeff;
       font-weight: 500;
       padding: 0 17px 0 0;
       height: 45px;
@@ -194,9 +194,9 @@ h2 {
   margin-top: 5%;
   background-color: transparent;
 	padding: 1.2rem 2.5rem;
-  border: 2px solid #050a17;
+  border: 3px solid #b7f3ed;
 	border-radius: 0rem;
-	color: #050a17;
+	color: #b7f3ed;
   font-size: 0.6875rem;
   font-family: "BreeSerif";
 	font-weight: 700;
@@ -310,7 +310,7 @@ span {
   background-color: transparent;
 	height: 1px;
 	width: 60px;
-	background-color: #050a17;
+	background-color: #b7f3ed;
 	position: absolute;
 	margin-top: 8px;
 	right: -35px;
