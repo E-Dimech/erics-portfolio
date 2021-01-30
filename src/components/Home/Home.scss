@@ -8,6 +8,9 @@
   margin-left: 5%;
   // min-height: 525px;
   min-width: 405px;
+  @include desktop {
+    margin-top: 5%;
+  }
   &__logo {
     width: 50px;
     // height: 200px;
@@ -29,6 +32,9 @@
   opacity: 1;
   display: inline-block;
   background-color: transparent;
+  @include tablet {
+    font-size: 5.6rem;
+  }
   &:hover {
     cursor: default;
     -webkit-animation: jello-vertical 1.5s both;
@@ -58,6 +64,9 @@ h2 {
   @include tablet {
     margin-top: 19%;
   }
+  @include desktop {
+    margin-top: 14%;
+  }
 }
 
 .home-greeting__text {
@@ -73,6 +82,10 @@ h2 {
   opacity: 1;
   display: inline-block;
   background-color: transparent;
+  @include tablet {
+    font-size: 4rem;
+    margin-top: 8%;
+  }
   &:hover {
     cursor: default;
     color: #45eeff;
@@ -88,9 +101,6 @@ h2 {
   &:nth-child(16) {
     padding-right: 10px;
   }
-  @include tablet {
-    font-size: 2.5rem;
-  }
 }
 
 .test {
@@ -103,17 +113,25 @@ h2 {
 .wordCarousel {
   background-color: transparent;
   font-size: 1.25rem;
-  
+  margin-top: 4%;
   width: 78.5%;
-  font-weight: 100;
+  font-weight: 500;
   // color: #45eeff;
-  color: #ff69b4;
+  // color: #ff69b4;
   color: #050a17;
   @include tablet {
+    margin-top: 13%;
     color: #45eeff;
+    // color: #ff69b4;
+    font-weight: 700;
 
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     width: 100%;
+  }
+  @include desktop {
+    color: #45eeff;
+    // color: #98ff98;
+    font-weight: 900;
   }
   &__text {
     font-family: "ArchitectsDaughter";
@@ -135,15 +153,22 @@ h2 {
       background-color: transparent;
       font-family: "ArchitectsDaughter";
       letter-spacing: 0.5px;
-      color: #45eeff;
+      color: #050a17;
+      // color: #45eeff;
       font-weight: 500;
       padding: 0 17px 0 0;
       height: 45px;
       margin-bottom: 45px;
       display: block;
       @include tablet{
-        padding: 0 10px;
+        padding: 0 14px;
+        color: #45eeff;
+        font-size: 2.3rem;
+        font-weight: 700;
       } 
+      @include desktop {
+        font-weight: 900;
+      }
     }
   }
 }
@@ -152,10 +177,17 @@ h2 {
   // Set margin top to 5% for tab/desk
   background-color: transparent;
   font-family: "BreeSerif";
-  margin-top: 15%;
+  margin-top: 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  @include tablet {
+    margin-top: 5%;
+  }
+  @include desktop {
+    margin-top: 5%;
+    margin-left: 0;
+  }
 }
 
 .btn-slice {
@@ -184,7 +216,7 @@ h2 {
   transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
 
   @include tablet {
-    border: 2px solid #b7f3ed;
+    border: 5px solid #b7f3ed;
 	  color: #b7f3ed;
   }
 }
@@ -425,18 +457,18 @@ span {
   }
 }
 
-.testtest {
-  color: #ff69b4;
-}
+// .testtest {
+//   color: #ff69b4;
+// }
 
-.testtest1 {
-  color: #98ff98;
-}
+// .testtest1 {
+//   color: #98ff98;
+// }
 
-.testtest2 {
-  color: #40e0d0;
-}
+// .testtest2 {
+//   color: #40e0d0;
+// }
 
-.testtest3 {
-  color: #ff69b4;
-}
+// .testtest3 {
+//   color: #ff69b4;
+// }
