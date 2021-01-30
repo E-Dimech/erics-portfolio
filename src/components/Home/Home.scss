@@ -16,6 +16,26 @@
   }
 }
 
+.lala {
+  font-family: "Gladiator";
+  font-size: 3.9rem;
+  letter-spacing: 5px;
+  height: 80px;
+  // color: #45eeff;
+  // color: #ff2483;
+  color: #ff69b4;
+  
+  font-weight: 400;
+  opacity: 1;
+  display: inline-block;
+  background-color: transparent;
+  &:hover {
+    cursor: default;
+    -webkit-animation: jello-vertical 1.5s both;
+    animation: jello-vertical 1.5s both;
+  }
+}
+
 .extra {
   margin-bottom: 15px;
   @include tablet {
@@ -85,7 +105,7 @@ h2 {
   
   width: 78.5%;
   font-weight: 100;
-  color: #98ff98;
+  color: #45eeff;
   @include tablet {
     font-size: 1.5rem;
     width: 100%;
@@ -110,7 +130,7 @@ h2 {
       background-color: transparent;
       font-family: "ArchitectsDaughter";
       letter-spacing: 0.5px;
-      color: #98ff98;
+      color: #45eeff;
       font-weight: 500;
       padding: 0 17px 0 0;
       height: 45px;

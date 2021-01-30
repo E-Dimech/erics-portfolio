@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.scss";
-import Logo from "../../Assets/Icon/elogo.png";
+// import Logo from "../../Assets/Icon/E.png";
 
 // function Home() {
 function Home() {
@@ -15,12 +15,13 @@ function Home() {
         <span className="home-greeting__text extra">I</span>
         <span className="home-greeting__text extra">'</span>
         <span className="home-greeting__text extra">m</span>
-        <span className="home-greeting__text extra">
-          <img
+        <span className="extra lala">
+          E
+          {/* <img
             className="home-greeting__logo"
             src={Logo}
             alt="Eric Dimech Fullstack Developer"
-          />
+          /> */}
         </span>
         <span className="home-greeting__text extra">r</span>
         <span className="home-greeting__text extra">i</span>

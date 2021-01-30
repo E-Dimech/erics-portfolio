@@ -3,7 +3,9 @@
 // NavBar styling for tablet and desktop media
 
 .navBar {
-  background-color: #b7f3ed;
+  // background-color: #b7f3ed;
+  background-color: #050a17;
+  border-bottom: 2px solid #b7f3ed;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -16,18 +18,23 @@
   }
   &__title {
     justify-self: start;
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    color: white;
+    font-family: "Gladiator";
+    color: #ff69b4;
     background-color: transparent;
-    padding-bottom: 11px;
+    // align-self: center;
+    // padding-top: -10px;
+    // padding-bottom: 0;
+    // margin-top: 5px;
     margin-right: 5%;
     margin-left: 4%;
   }
 
   &__menu {
     display: grid;
-    background-color: #b7f3ed;
+    // background-color: #b7f3ed;
+    background-color: #050a17;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
@@ -38,8 +45,10 @@
   }
 
   &__link {
-    background-color: #b7f3ed;
-    color: #051418;
+    // background-color: #b7f3ed;
+    background-color: #050a17;
+    // color: #051418;
+    color: #45eeff;
     font-size: 1.5rem;
     font-family: "BreeSerif";
     text-decoration: none;
@@ -50,6 +59,7 @@
       // border-radius: 4px;
       font-weight: 800;
       color: white;
+      // color: #1854e0;
       transition: all 0.2s ease-out;
     }
   }
@@ -61,7 +71,7 @@
 
 .fa-bars {
   color: white;
-  background-color: #b7f3ed;
+  background-color: #050a17;
   margin-top: 5px;
 }
 
@@ -103,20 +113,20 @@
       &:hover {
         border: #b7f3ed;
         color: #b7f3ed;
-        background-color: #051418;
+        background-color: #45f0ffaf;
         border-radius: 0;
       }
     }
 
     &__title {
       position: absolute;
-      top: -21px;
+      top: -28px;
       left: -15px;
       transform: translate(25%, 50%);
     }
 
     &__menu-icon {
-      background-color: #b7f3ed;
+      background-color: #050a17;
       display: block;
       position: absolute;
       top: 0;
@@ -128,7 +138,7 @@
   }
 
   .fa-times {
-    background-color: #b7f3ed;
+    background-color: #050a17;
     color: #fff;
     font-size: 2rem;
   }

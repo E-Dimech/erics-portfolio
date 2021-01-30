@@ -157,7 +157,7 @@ function About() {
                   <h1>Guacamole</h1>
                   <p>
                     Not a technology but I am an expert connoisseur and
-                    craftsperson.
+                    craftsmen.
                   </p>
                 </div>
               </div>
