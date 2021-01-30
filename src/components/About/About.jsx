@@ -155,10 +155,7 @@ function About() {
                 <div class="hexLink">
                   <img src={Guac} alt="" />
                   <h1>Guacamole</h1>
-                  <p>
-                    Not a technology but I am an expert connoisseur and
-                    craftsmen.
-                  </p>
+                  <p>Not a technology but I am a connoisseur and craftsmen.</p>
                 </div>
               </div>
             </li>

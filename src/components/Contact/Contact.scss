@@ -23,7 +23,7 @@
     }
   }
   &__divider {
-    border-bottom: 3px solid #98ff98;
+    border-bottom: 3px solid #45eeff;
     margin-bottom: 7%;
     margin-top: 7%;
     width: 80%;
@@ -38,8 +38,10 @@
   }
   &__social-icon {
     background-color: transparent;
-
-    color: #b7f3ed;
+    color: whitesmoke;
+    &:hover {
+      color: #45eeff;
+    }
   }
   &__container {
     margin-top: 10%;
@@ -72,7 +74,7 @@
     &:focus {
       color: white;
       outline: none;
-      border-color: #98ff98;
+      border-color: #45eeff;
       cursor: pointer;
       opacity: 0.9;
     }
@@ -101,7 +103,7 @@
     &:focus {
       color: white;
       outline: none;
-      border-color: #98ff98;
+      border-color: #45eeff;
       cursor: pointer;
       opacity: 0.9;
     }
@@ -127,7 +129,10 @@
     color: white;
     background-color: transparent;
     // top: 5%; chrome and safari okay
-    margin-top: 10px;
+    // margin-top: 10px;
+    // padding-top: 20px;
+    // padding-bottom: 50%;
+    top: 10px;
     margin-left: 10px;
     position: absolute;
   }
@@ -144,7 +149,7 @@
     border-radius: 10px;
     position: relative;
     &:hover {
-      background: #b7f3ed;
+      background: #45eeff;
       color: #fff;
       cursor: pointer;
       opacity: 1;
@@ -168,14 +173,14 @@
   font-family: "BreeSerif";
 }
 
-// @-moz-document url-prefix() {
-//   .contact-form__icon-user {
-//     margin-top: 22px;
-//   }
-//   .contact-form__icon-envelope {
-//     margin-top: 22px;
-//   }
-//   .contact-form__icon-comment {
-//     margin-top: 22px;
-//   }
-// }
+@-moz-document url-prefix() {
+  .contact-form__icon-user {
+    top: 10px;
+  }
+  .contact-form__icon-envelope {
+    top: 10px;
+  }
+  .contact-form__icon-comment {
+    top: 20px;
+  }
+}
