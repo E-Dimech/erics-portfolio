@@ -20,9 +20,6 @@ function Projects() {
                 Access a database including every coaster on the planet and
                 track your “coaster credits!”
               </p>
-              {/* <p class="content-text">
-                users can keep track of their “coaster credits!”
-              </p> */}
               {/* <div className="container-link-wrp"> */}
               <a
                 className="content-link"
@@ -47,19 +44,16 @@ function Projects() {
                 Search through a movie database and "nominate" your top five
                 favourite films!
               </p>
-              {/* <p class="content-text">
-                "nominate" your top five favourite films!
-              </p> */}
               <div className="container-link-wrp">
                 <a
                   className="content-link"
-                  href="https://github.com/E-Dimech/TheShoppiesDevChallenge"
+                  href="https://github.com/E-Dimech/MovieReels"
                 >
                   <i class="contact-form__social-icon fab fa-github fa-2x"></i>
                 </a>
                 <a
                   className="content-link"
-                  href="https://ericdimechsummer2021webdevchallenge.netlify.app/"
+                  href="https://moviereels.netlify.app/"
                 >
                   <i class="contact-form__social-icon fas fa-link fa-2x"></i>
                 </a>
@@ -86,13 +80,10 @@ function Projects() {
             <div class="content-details fadeIn-bottom">
               <h3 class="content-title">BrainFlix</h3>
               <p class="content-text">Video player app inspired by Youtube</p>
-              {/* <p class="content-text">
-                "nominate" your top five favourite films!
-              </p> */}
               <div className="container-link-wrp">
                 <a
                   className="content-link"
-                  href="https://github.com/E-Dimech/eric-dimech-brainflix/tree/master/sprint-3"
+                  href="https://github.com/E-Dimech/eric-dimech-brainflix"
                 >
                   <i class="contact-form__social-icon fab fa-github fa-2x"></i>
                 </a>
