@@ -1,20 +1,65 @@
 @import "../../Styles/global";
 
 .about-me {
-  margin-top: 15%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  // z-index: 3;
-  @include tablet {
-    // display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  z-index: 3;
+
+  &__sign {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: transparent;
+    background-image: radial-gradient(
+      ellipse 50% 35% at 50% 50%,
+      #6b1839,
+      transparent
+    );
+
+    transform: translate(-50%, -50%);
+    letter-spacing: 2;
+    left: 50%;
+    font-family: "ArchitectsDaughter";
+    font-size: 3em;
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff69b4,
+      -0.2rem 0.1rem 1rem #ff69b4, 0.2rem 0.1rem 1rem #ff69b4,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+    animation: shine 2s forwards, flicker 3s infinite;
+
+    @include tablet {
+      font-size: 5rem;
+    }
+
+    @include desktop {
+      font-size: 6rem;
+    }
   }
-  @include desktop {
-    margin-top: 10%;
+
+  &__fast-flicker {
+    animation: shine 2s forwards, blink 10s 1s infinite;
   }
+
+  &__flicker {
+    animation: shine 2s forwards, blink 3s 2s infinite;
+  }
+
+  &__container {
+    margin-top: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    @include desktop {
+      margin-top: 10%;
+    }
+  }
+
   &__statement {
     font-family: "BreeSerif";
     letter-spacing: 2px;
@@ -24,12 +69,14 @@
     text-align: center;
     color: whitesmoke;
     max-width: 90%;
+
     @include tablet {
       line-height: 3rem;
       font-size: 1.5rem;
       max-width: 50%;
       margin-top: 10%;
     }
+
     @include desktop {
       margin-top: 8%;
       line-height: 5rem;
@@ -37,6 +84,7 @@
       max-width: 50%;
     }
   }
+
   &__polaroid-a {
     border-radius: 10px;
     background: #ffffff;
@@ -54,18 +102,20 @@
     transition: all 0.2s linear;
     z-index: 100;
     position: relative;
+
     @include tablet {
-      //   margin: 5%;
       max-width: 400px;
       max-height: 280px;
       padding: 10px 10px 40px;
     }
+
     @include desktop {
       width: 435px;
       max-width: 435px;
       max-height: 400px;
       padding: 10px 12px 40px;
     }
+
     &:after {
       color: rgb(107, 43, 43);
       font-family: "ArchitectsDaughter";
@@ -74,10 +124,8 @@
       position: relative;
       top: 15px;
     }
+
     &:hover {
-      //   -webkit-transform: scale(1.2);
-      //   -moz-transform: scale(1.2);
-      // transform: scale(1.2);
       transform: rotate(1.2);
       -webkit-transform: rotate(-2deg);
       -moz-transform: rotate(-2deg);
@@ -88,38 +136,56 @@
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
     }
   }
+
   &__polaroid-picture {
     border-radius: 10px;
     width: 260px;
     max-width: 260px;
     margin-top: 2%;
+
     @include tablet {
       width: 450px;
       display: block;
     }
+
     @include desktop {
       width: 410px;
       max-width: 410px;
     }
   }
+
   &__cv-wrap {
     display: flex;
     justify-content: center;
     margin-top: 5%;
   }
+
   &__cv-download {
     z-index: 1000;
     background-color: transparent;
-    // margin-top: 5%;
     font-size: 1.5rem;
     color: white;
   }
+
   &__save {
     background-color: transparent;
-    // color: #b7f3ed;
     color: #45eeff;
     font-size: 2rem;
   }
+
+  &__save-text {
+    position: relative;
+    font-size: 1.5rem;
+    font-family: "BreeSerif";
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #45eeff;
+
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
   &__skills-title {
     text-align: center;
     font-family: "ArchitectsDaughter";
@@ -130,18 +196,19 @@
     background-color: transparent;
     margin-top: 10%;
     margin-bottom: 10%;
+
     @include tablet {
       font-size: 3.5rem;
     }
+
     @include desktop {
       font-size: 5rem;
       margin-bottom: 2%;
       margin-top: 5%;
     }
   }
+
   &__skills-container {
-    // position: relative;
-    // background-color: transparent;
     margin-bottom: 0;
     display: flex;
     width: 95%;
@@ -149,11 +216,10 @@
     box-sizing: border-box;
     height: 85vh;
     z-index: 1000;
-    // z-index: 2;
   }
+
   &__skills-box {
     z-index: 1000;
-    // opacity: 0.9;
     background-color: transparent;
     flex: 1;
     overflow: hidden;
@@ -161,10 +227,12 @@
     margin: 0 2%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
     line-height: 0;
+
     &:hover {
       flex: 1 1 50%;
     }
   }
+
   &__skills-img {
     opacity: 0.3;
     background-color: unset;
@@ -178,69 +246,28 @@
       height: 100%;
     }
   }
+
   &__skills-name {
     background-color: transparent;
     font-size: 0.75rem;
     font-family: "ArchitectsDaughter";
-
     display: block;
     text-align: center;
     height: 10vh;
     line-height: 2.6;
     color: WHITE;
+
     @include tablet {
       font-size: 1.1rem;
     }
+
     @include desktop {
       font-size: 1.9rem;
     }
   }
 }
 
-.test {
-  z-index: 3;
-  // margin-top: 10%;
-  // width: 100%;
-  // display: flex;
-  // flex-direction: column;
-  //   flex-wrap: nowrap;
-  // align-items: center;
-}
-
-.sign {
-  // margin-top: 5%;
-  // margin-bottom: 15%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30%;
-  background-color: transparent;
-  // height: 20%;
-  background-image: radial-gradient(
-    ellipse 50% 35% at 50% 50%,
-    #6b1839,
-    transparent
-  );
-  transform: translate(-50%, -50%);
-  letter-spacing: 2;
-  left: 50%;
-  // top: 50%;
-  font-family: "ArchitectsDaughter";
-  // text-transform: uppercase;
-  font-size: 3em;
-  color: #ffe6ff;
-  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff69b4,
-    -0.2rem 0.1rem 1rem #ff69b4, 0.2rem 0.1rem 1rem #ff69b4,
-    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
-  animation: shine 2s forwards, flicker 3s infinite;
-  @include tablet {
-    font-size: 5rem;
-  }
-  @include desktop {
-    font-size: 6rem;
-  }
-}
+/* Animation Keyframes */
 
 @keyframes blink {
   0%,
@@ -262,14 +289,6 @@
     color: #ff2483;
     text-shadow: none;
   }
-}
-
-.flicker {
-  animation: shine 2s forwards, blink 3s 2s infinite;
-}
-
-.fast-flicker {
-  animation: shine 2s forwards, blink 10s 1s infinite;
 }
 
 @keyframes shine {
@@ -411,19 +430,7 @@
   }
 }
 
-.texxxt {
-  position: relative;
-  font-size: 1.5rem;
-  font-family: "BreeSerif";
-  font-weight: 500;
-  letter-spacing: 2px;
-  // color: #b7f3ed;
-  color: #45eeff;
-  @include tablet {
-    font-size: 2rem;
-    // color: #b7f3ed;
-  }
-}
+/*** HEX CONTENT ******************************************************/
 
 #hexGrid {
   display: flex;
@@ -478,14 +485,10 @@
   transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
 }
 
-/*** HEX CONTENT **********************************************************************/
 .hex img {
   left: -100%;
   right: -100%;
   background-color: #b7f3ed;
-  //   opacity: 0.9;
-  //   background-color: black;
-  //   border: 3px solid white;
   width: 60%;
   height: 50%;
   margin: 30% auto;

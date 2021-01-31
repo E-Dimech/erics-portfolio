@@ -3,7 +3,6 @@
 // NavBar styling for tablet and desktop media
 
 .navBar {
-  // background-color: #b7f3ed;
   background-color: #050a17;
   border-bottom: 2px solid #45eeff;
   width: 100%;
@@ -12,11 +11,13 @@
   justify-content: flex-start;
   align-items: center;
   font-size: 1rem;
+
   &__logo-link {
     margin-left: 5%;
     padding-bottom: 0;
     background-color: transparent;
   }
+
   &__title {
     justify-self: start;
     font-size: 3.5rem;
@@ -24,17 +25,12 @@
     font-family: "Gladiator";
     color: #ff69b4;
     background-color: transparent;
-    // align-self: center;
-    // padding-top: -10px;
-    // padding-bottom: 0;
-    // margin-top: 5px;
     margin-right: 5%;
     margin-left: 4%;
   }
 
   &__menu {
     display: grid;
-    // background-color: #b7f3ed;
     background-color: #050a17;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
@@ -46,9 +42,7 @@
   }
 
   &__link {
-    // background-color: #b7f3ed;
     background-color: #050a17;
-    // color: #051418;
     color: whitesmoke;
     font-size: 1.5rem;
     font-family: "BreeSerif";
@@ -56,11 +50,8 @@
     padding: 0.5rem 1rem;
     z-index: 9;
     &:hover {
-      // background-color: rgb(143, 57, 57);
-      // border-radius: 4px;
       font-weight: 800;
       color: #45eeff;
-      // color: #1854e0;
       transition: all 0.2s ease-out;
     }
   }
@@ -91,10 +82,6 @@
       left: -100%;
       opacity: 1;
     }
-    // &__menu-link {
-    //   background-color: #054b44;
-    // }
-
     &__menu-active {
       position: absolute;
       background-color: #b7f3ed;
@@ -143,9 +130,6 @@
     color: #fff;
     font-size: 2rem;
   }
-  // .menu-link {
-  //   background-color: #054b44;
-  // }
 }
 
 a {

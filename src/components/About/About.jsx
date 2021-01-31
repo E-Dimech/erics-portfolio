@@ -15,11 +15,12 @@ import "./About.scss";
 
 function About() {
   return (
-    <div className="test">
-      <div class="sign">
-        <span class="fast-flicker">b</span>onj<span class="flicker">o</span>ur
+    <div className="about-me">
+      <div class="about-me__sign">
+        <span class="about-me__fast-flicker">b</span>onj
+        <span class="about-me__flicker">o</span>ur
       </div>
-      <div className="about-me">
+      <div className="about-me__container">
         <p className="about-me__statement">
           I'm a fullstack web developer based out of Toronto, Canada. I enjoy
           the daily challenge of undertaking complex problems and creating
@@ -47,7 +48,7 @@ function About() {
           download="test.pdf"
         >
           <i class="about-me__save far fa-save">
-            <span className="texxxt">&nbsp; Download CV</span>
+            <span className="about-me__save-text">&nbsp; Download CV</span>
           </i>
         </a>
       </div>

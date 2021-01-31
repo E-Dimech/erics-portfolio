@@ -1,13 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.scss";
-// import Logo from "../../Assets/Icon/E.png";
 
-// function Home() {
 function Home() {
   return (
     <div className="home-greeting">
-      <div className="home-greeting__h1">
+      <div className="home-greeting__container">
         <span className="home-greeting__text">H</span>
         <span className="home-greeting__text">i</span>
         <span className="home-greeting__text">,</span>
@@ -15,14 +13,7 @@ function Home() {
         <span className="home-greeting__text extra">I</span>
         <span className="home-greeting__text extra">'</span>
         <span className="home-greeting__text extra">m</span>
-        <span className="extra lala">
-          E
-          {/* <img
-            className="home-greeting__logo"
-            src={Logo}
-            alt="Eric Dimech Fullstack Developer"
-          /> */}
-        </span>
+        <span className="home-greeting__logo extra">E</span>
         <span className="home-greeting__text extra">r</span>
         <span className="home-greeting__text extra">i</span>
         <span className="home-greeting__text extra">c</span>
@@ -42,10 +33,10 @@ function Home() {
         <span className="home-greeting__text">r</span>
         <span className="home-greeting__text">.</span>
       </div>
-      <h2 class="wordCarousel">
+      <h2 className="wordCarousel">
         <span className="wordCarousel__text">Fullstack Developer / </span>
-        <div>
-          <ul class="flip4">
+        <div className="wordCarousel__container">
+          <ul className="flip4">
             <li>React Expert</li>
             {/* <li>Snowboarder</li> */}
             <li>Tech Obsessed</li>
@@ -55,12 +46,12 @@ function Home() {
         </div>
       </h2>
       <div className="btn">
-        <Link to="/contact" className="btn-slice">
-          <div class="top">
-            <span>CONTACT ME</span>
+        <Link to="/contact" className="btn__slice">
+          <div className="btn__top">
+            <span className="btn__text">CONTACT ME</span>
           </div>
-          <div class="bottom">
-            <span>CONTACT ME</span>
+          <div className="btn__bottom">
+            <span className="btn__text">CONTACT ME</span>
           </div>
         </Link>
       </div>
