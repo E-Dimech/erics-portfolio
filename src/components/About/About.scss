@@ -38,10 +38,12 @@
 
   &__fast-flicker {
     animation: shine 2s forwards, blink 10s 1s infinite;
+    background-color: transparent;
   }
 
   &__flicker {
     animation: shine 2s forwards, blink 3s 2s infinite;
+    background-color: transparent;
   }
 
   &__container {
@@ -175,6 +177,7 @@
 
   &__save-text {
     position: relative;
+    background-color: transparent;
     font-size: 1.5rem;
     font-family: "BreeSerif";
     font-weight: 500;
@@ -189,7 +192,7 @@
   &__skills-title {
     text-align: center;
     font-family: "ArchitectsDaughter";
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: #ff2483;
     font-weight: 800;
     position: relative;
@@ -198,7 +201,7 @@
     margin-bottom: 10%;
 
     @include tablet {
-      font-size: 3.5rem;
+      font-size: 4.5rem;
     }
 
     @include desktop {
@@ -268,6 +271,15 @@
 }
 
 /* Animation Keyframes */
+
+// .fast-flicker {
+//   animation: shine 2s forwards, blink 10s 1s infinite;
+//   background-color: transparent;
+// }
+
+// .flicker {
+//   animation: shine 2s forwards, blink 3s 2s infinite;
+// }
 
 @keyframes blink {
   0%,

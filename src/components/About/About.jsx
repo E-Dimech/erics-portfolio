@@ -16,9 +16,9 @@ import "./About.scss";
 function About() {
   return (
     <div className="about-me">
-      <div class="about-me__sign">
-        <span class="about-me__fast-flicker">b</span>onj
-        <span class="about-me__flicker">o</span>ur
+      <div className="about-me__sign">
+        <span className="about-me__fast-flicker">b</span>onj
+        <span className="about-me__flicker">o</span>ur
       </div>
       <div className="about-me__container">
         <p className="about-me__statement">
