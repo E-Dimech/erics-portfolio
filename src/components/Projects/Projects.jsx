@@ -17,23 +17,23 @@ function Projects() {
             <div class="content-details fadeIn-bottom">
               <h3 class="content-title">TRAX</h3>
               <p class="content-text">
-                With access to a database including every coaster on the planet,
+                Access a database including every coaster on the planet and
+                track your “coaster credits!”
               </p>
-              <p class="content-text">
-                users can keep track of their riding experiences commonly known
-                as “coaster credits!”
-              </p>
-              <div className="container-link-wrp">
-                <a
-                  className="content-link"
-                  href="https://github.com/E-Dimech/trax"
-                >
-                  <i class="contact-form__social-icon fab fa-github fa-2x"></i>
-                </a>
-                {/* <a className="content-link" href="www.ericdimech.ca">
+              {/* <p class="content-text">
+                users can keep track of their “coaster credits!”
+              </p> */}
+              {/* <div className="container-link-wrp"> */}
+              <a
+                className="content-link"
+                href="https://github.com/E-Dimech/trax"
+              >
+                <i class="contact-form__social-icon fab fa-github fa-2x"></i>
+              </a>
+              {/* <a className="content-link" href="www.ericdimech.ca">
                   <i class="contact-form__social-icon fas fa-link fa-2x"></i>
                 </a> */}
-              </div>
+              {/* </div> */}
             </div>
           </a>
         </div>
@@ -44,11 +44,12 @@ function Projects() {
             <div class="content-details fadeIn-bottom">
               <h3 class="content-title">Movie Reels</h3>
               <p class="content-text">
-                Search through a large movie database and
+                Search through a movie database and "nominate" your top five
+                favourite films!
               </p>
-              <p class="content-text">
+              {/* <p class="content-text">
                 "nominate" your top five favourite films!
-              </p>
+              </p> */}
               <div className="container-link-wrp">
                 <a
                   className="content-link"

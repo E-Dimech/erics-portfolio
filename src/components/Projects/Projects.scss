@@ -19,11 +19,30 @@
   width: 100%;
   margin-top: 5%;
   display: flex;
+  // padding-right: 10px;
+  // scroll-padding-left: 10px;
   justify-content: center;
 }
 .content-link {
-  width: 10%;
+  width: 30%;
+  // margin-bottom: 20px;
+
   cursor: grab;
+  @include desktop {
+    width: 10%;
+    // margin-top: 40%;
+  }
+}
+
+.contact-form__social-icon {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  // width: 100%;
+  // margin-left: 20px;
+  // margin-right: 20px;
+  @include desktop {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -58,7 +77,7 @@
   margin: 40px auto;
   overflow: hidden;
   @include tablet {
-    width: 25%;
+    width: 35%;
     // max-height: 400px;
   }
 }
@@ -94,6 +113,7 @@
 .content-details {
   position: absolute;
   text-align: center;
+  // align-items: center;
   padding-left: 1em;
   padding-right: 1em;
   width: 100%;
@@ -113,7 +133,8 @@
 }
 
 .content-title {
-  margin-top: 20px;
+  margin-top: 2px;
+  margin-bottom: 0;
   font-family: "BreeSerif";
   font-size: 2rem;
 }
@@ -123,22 +144,35 @@
   color: white;
   font-size: 0.9rem;
   @include tablet {
-    font-size: 1.1rem;
+    margin-top: 0;
+    // font-size: 0.8rem;
+  }
+  @include desktop {
+    margin-top: 5%;
+    font-size: 1.2rem;
   }
 }
 
 .content:hover .content-details {
   top: 50%;
   left: 50%;
-  opacity: 0.5;
+  opacity: 0.7;
+  height: auto;
+  // width: 100%;
 }
 
 .content-details h3 {
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
-  margin-bottom: 0.5em;
+  // margin-bottom: 0.5em;
   text-transform: uppercase;
+  @include tablet {
+    font-size: 1.5rem;
+  }
+  @include desktop {
+    font-size: 2rem;
+  }
 }
 
 // .content-details p {
