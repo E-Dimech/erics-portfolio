@@ -8,87 +8,72 @@ import "./Projects.scss";
 
 function Projects() {
   return (
-    <div class="container">
-      <div className="tesssst">
-        <div class="content">
+    <div class="projects">
+      <div className="projects__container">
+        <div class="projects__content">
           <a href="/">
-            <div class="content-overlay"></div>
-            <img alt="" class="content-image" src={traxpic} />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">TRAX</h3>
-              <p class="content-text">
+            <div class="projects__content-overlay"></div>
+            <img alt="" class="projects__content-image" src={traxpic} />
+            <div class="projects__content-details fadeIn-bottom">
+              <h3 class="projects__content-title">TRAX</h3>
+              <p class="projects__content-text">
                 Access a database including every coaster on the planet and
                 track your “coaster credits!”
               </p>
-              {/* <div className="container-link-wrp"> */}
               <a
-                className="content-link"
+                className="projects__content-link"
                 href="https://github.com/E-Dimech/trax"
               >
-                <i class="contact-form__social-icon fab fa-github fa-2x"></i>
+                <i class="projects__social-icon fab fa-github fa-2x"></i>
               </a>
-              {/* <a className="content-link" href="www.ericdimech.ca">
-                  <i class="contact-form__social-icon fas fa-link fa-2x"></i>
-                </a> */}
-              {/* </div> */}
             </div>
           </a>
         </div>
-        <div class="content">
+        <div class="projects__content">
           <a href="/">
-            <div class="content-overlay"></div>
-            <img alt="" class="content-image" src={reelspic} />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Movie Reels</h3>
-              <p class="content-text">
+            <div class="projects__content-overlay"></div>
+            <img alt="" class="projects__content-image" src={reelspic} />
+            <div class="projects__content-details fadeIn-bottom">
+              <h3 class="projects__content-title">Movie Reels</h3>
+              <p class="projects__content-text">
                 Search through a movie database and "nominate" your top five
                 favourite films!
               </p>
-              <div className="container-link-wrp">
+              <div className="projects__link-wrp">
                 <a
-                  className="content-link"
+                  className="projects__content-link"
                   href="https://github.com/E-Dimech/MovieReels"
                 >
-                  <i class="contact-form__social-icon fab fa-github fa-2x"></i>
+                  <i class="projects__social-icon fab fa-github fa-2x"></i>
                 </a>
                 <a
-                  className="content-link"
+                  className="projects__content-link"
                   href="https://moviereels.netlify.app/"
                 >
-                  <i class="contact-form__social-icon fas fa-link fa-2x"></i>
+                  <i class="projects__social-icon fas fa-link fa-2x"></i>
                 </a>
               </div>
             </div>
           </a>
         </div>
-
-        {/* <div class="content">
+        <div class="projects__content">
           <a href="/">
-            <div class="content-overlay"></div>
-            <img alt="" class="content-image" src={seniorpic} />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Substitute Daughter</h3>
-              <p class="content-text">This is a short description</p>
-              <p class="content-text">This is a short description</p>
-            </div>
-          </a>
-        </div> */}
-        <div class="content">
-          <a href="/">
-            <div class="content-overlay"></div>
-            <img alt="" class="content-image" src={brainflixpic} />
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">BrainFlix</h3>
-              <p class="content-text">Video player app inspired by Youtube</p>
-              <div className="container-link-wrp">
+            <div class="projects__content-overlay"></div>
+            <img alt="" class="projects__content-image" src={brainflixpic} />
+            <div class="projects__content-details fadeIn-bottom">
+              <h3 class="projects__content-title">BrainFlix</h3>
+              <p class="projects__content-text">
+                Video player app inspired by Youtube
+              </p>
+              <div className="projects__link-wrp">
                 <a
-                  className="content-link"
+                  className="projects__content-link"
                   href="https://github.com/E-Dimech/eric-dimech-brainflix"
                 >
-                  <i class="contact-form__social-icon fab fa-github fa-2x"></i>
+                  <i class="projects__social-icon fab fa-github fa-2x"></i>
                 </a>
-                <a className="content-link" href="www.ericdimech.ca">
-                  <i class="contact-form__social-icon fas fa-link fa-2x"></i>
+                <a className="projects__content-link" href="www.ericdimech.ca">
+                  <i class="projects__social-icon fas fa-link fa-2x"></i>
                 </a>
               </div>
             </div>
