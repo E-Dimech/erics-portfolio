@@ -11,7 +11,7 @@ function Projects() {
     <div class="projects">
       <div className="projects__container">
         <div class="projects__content">
-          <a href="/">
+          <div>
             <div class="projects__content-overlay"></div>
             <img alt="" class="projects__content-image" src={traxpic} />
             <div class="projects__content-details fadeIn-bottom">
@@ -27,10 +27,10 @@ function Projects() {
                 <i class="projects__social-icon fab fa-github fa-2x"></i>
               </a>
             </div>
-          </a>
+          </div>
         </div>
         <div class="projects__content">
-          <a href="/">
+          <div>
             <div class="projects__content-overlay"></div>
             <img alt="" class="projects__content-image" src={reelspic} />
             <div class="projects__content-details fadeIn-bottom">
@@ -54,10 +54,10 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </a>
+          </div>
         </div>
         <div class="projects__content">
-          <a href="/">
+          <div>
             <div class="projects__content-overlay"></div>
             <img alt="" class="projects__content-image" src={brainflixpic} />
             <div class="projects__content-details fadeIn-bottom">
@@ -77,7 +77,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>

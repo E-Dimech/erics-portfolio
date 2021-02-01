@@ -28,11 +28,11 @@
     animation: shine 2s forwards, flicker 3s infinite;
 
     @include tablet {
-      font-size: 5rem;
+      font-size: 7rem;
     }
 
     @include desktop {
-      font-size: 6rem;
+      font-size: 10rem;
     }
   }
 
@@ -76,11 +76,11 @@
       line-height: 3rem;
       font-size: 1.5rem;
       max-width: 50%;
-      margin-top: 10%;
+      margin-top: 15%;
     }
 
     @include desktop {
-      margin-top: 8%;
+      margin-top: 10%;
       line-height: 5rem;
       font-size: 2rem;
       max-width: 50%;
@@ -106,6 +106,7 @@
     position: relative;
 
     @include tablet {
+      margin-top: 15%;
       max-width: 400px;
       max-height: 280px;
       padding: 10px 10px 40px;
@@ -160,6 +161,7 @@
     display: flex;
     justify-content: center;
     margin-top: 5%;
+    margin-bottom: 8%;
   }
 
   &__cv-download {
@@ -197,27 +199,27 @@
     font-weight: 800;
     position: relative;
     background-color: transparent;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    // margin-top: 150%;
+    // margin-bottom: 10%;
 
     @include tablet {
       font-size: 5rem;
     }
 
     @include desktop {
-      font-size: 5.5rem;
+      font-size: 6.5rem;
       margin-bottom: 2%;
       margin-top: 5%;
     }
   }
 
   &__skills-container {
-    margin-bottom: 0;
+    margin-top: 10px;
     display: flex;
-    width: 95%;
+    width: 100%;
     padding: 4% 2%;
     box-sizing: border-box;
-    height: 85vh;
+    height: 60vh;
     z-index: 1000;
   }
 
@@ -230,23 +232,26 @@
     margin: 0 2%;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
     line-height: 0;
+    // height: 400px;
 
     &:hover {
-      flex: 1 1 50%;
+      flex: 1 1 20%;
+      // height: 70vh;
     }
   }
 
   &__skills-img {
     opacity: 0.3;
     background-color: unset;
-    width: 200%;
-    height: calc(100% - 15vh);
-    object-fit: cover;
+    width: 100%;
+    // height: 500px;
+    height: calc(100% - 10vh);
+    object-fit: contain;
     transition: 0.5s;
     &:hover {
       opacity: 0.9;
-      width: 100%;
-      height: 100%;
+      // width: 50%;
+      // height: 50%;
     }
   }
 
@@ -256,7 +261,7 @@
     font-family: "ArchitectsDaughter";
     display: block;
     text-align: center;
-    height: 10vh;
+    // height: 1vh;
     line-height: 2.6;
     color: WHITE;
 
@@ -265,7 +270,7 @@
     }
 
     @include desktop {
-      font-size: 1.9rem;
+      font-size: 1.7rem;
     }
   }
 }
