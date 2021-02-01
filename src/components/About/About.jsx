@@ -44,8 +44,8 @@ function About() {
       <div className="about-me__cv-wrap">
         <a
           className="about-me__cv-download"
-          href="/resume/test.pdf"
-          download="test.pdf"
+          href="/resume/EricDimechCV.pdf"
+          download="EricDimechCV"
         >
           <i class="about-me__save far fa-save">
             <span className="about-me__save-text">&nbsp; Download CV</span>
