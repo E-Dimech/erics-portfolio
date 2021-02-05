@@ -20,6 +20,7 @@
     overflow: hidden;
     @include tablet {
       width: 35%;
+      max-width: 700px;
       // height: 100%;
     }
   }
