@@ -15,6 +15,10 @@ class NavBar extends Component {
     this.setState({ active: !this.state.active });
   };
 
+  hideBurger = () => {
+    this.setState({ active: false });
+  };
+
   render() {
     return (
       <>
@@ -36,7 +40,7 @@ class NavBar extends Component {
             {MenuItems.map((item, index) => {
               return (
                 <li key={index}>
-                  <Link to={item.url}>
+                  <Link to={item.url} onClick={this.hideBurger}>
                     <p className={item.cName}>{item.title}</p>
                   </Link>
                 </li>
