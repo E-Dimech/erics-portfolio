@@ -6,7 +6,6 @@ import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import NavBar from "./components/NavBar/NavBar";
 import Background from "./components/Background/Background";
-// import GooBubble from "./components/GooBubble/GooBubble";
 
 function App() {
   return (
@@ -14,7 +13,6 @@ function App() {
       <div className="App">
         <NavBar />
         <Background />
-        {/* <GooBubble /> */}
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/about" component={About} />

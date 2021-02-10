@@ -1,7 +1,6 @@
 import React from "react";
 import traxpic from "../../Assets/Images/traxSrnshoot.png";
 import reelspic from "../../Assets/Images/reelsSrnShot.png";
-// import seniorpic from "../../Assets/Images/seniorCare.jpg";
 import brainflixpic from "../../Assets/Images/brainFlix.png";
 
 import "./Projects.scss";

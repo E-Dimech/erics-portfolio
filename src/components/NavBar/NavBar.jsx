@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { MenuItems } from "./MenuItems";
 
-// import Logo from "../../Assets/Icon/elogo.png";
-
 import "./NavBar.scss";
 
 class NavBar extends Component {
