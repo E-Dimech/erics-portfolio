@@ -19,12 +19,20 @@ function Projects() {
                 Access a database including every coaster on the planet and
                 track your “coaster credits!”
               </p>
-              <a
-                className="projects__content-link"
-                href="https://github.com/E-Dimech/trax"
-              >
-                <i class="projects__social-icon fab fa-github fa-2x"></i>
-              </a>
+              <div className="projects__link-wrp">
+                <a
+                  className="projects__content-link"
+                  href="https://github.com/E-Dimech/trax"
+                >
+                  <i class="projects__social-icon fab fa-github fa-2x"></i>
+                </a>
+                <a
+                  className="projects__content-link"
+                  href="https://traxcredits.herokuapp.com/"
+                >
+                  <i class="projects__social-icon fas fa-link fa-2x"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
