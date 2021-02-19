@@ -79,9 +79,9 @@ function Projects() {
                 >
                   <i class="projects__social-icon fab fa-github fa-2x"></i>
                 </a>
-                <a className="projects__content-link" href="www.ericdimech.ca">
+                {/* <a className="projects__content-link" href="www.ericdimech.ca">
                   <i class="projects__social-icon fas fa-link fa-2x"></i>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
