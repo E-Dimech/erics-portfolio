@@ -2,6 +2,7 @@ import React from "react";
 import traxpic from "../../Assets/Images/traxSrnshoot.png";
 import reelspic from "../../Assets/Images/reelsSrnShot.png";
 import brainflixpic from "../../Assets/Images/brainFlix.png";
+import capturespic from "../../Assets/Images/seniorCare.jpg";
 
 import "./Projects.scss";
 
@@ -39,7 +40,7 @@ function Projects() {
         <div class="projects__content">
           <div>
             <div class="projects__content-overlay"></div>
-            <img alt="" class="projects__content-image" src={traxpic} />
+            <img alt="" class="projects__content-image" src={capturespic} />
             <div class="projects__content-details fadeIn-bottom">
               <h3 class="projects__content-title">Captures</h3>
               <p class="projects__content-text">
