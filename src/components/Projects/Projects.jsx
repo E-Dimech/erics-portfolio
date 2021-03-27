@@ -44,9 +44,9 @@ function Projects() {
             <div class="projects__content-details fadeIn-bottom">
               <h3 class="projects__content-title">Captures</h3>
               <p class="projects__content-text">
-                This is a basic social media image app that allows users to post
-                images to a story board with descriptions to help preserve those
-                captured moments.
+                Social media image app that allows users to post images to a
+                story board with descriptions to help preserve those captured
+                moments.
               </p>
               <div className="projects__link-wrp">
                 <a
