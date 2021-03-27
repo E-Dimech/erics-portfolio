@@ -2,7 +2,7 @@ import React from "react";
 import traxpic from "../../Assets/Images/traxSrnshoot.png";
 import reelspic from "../../Assets/Images/reelsSrnShot.png";
 import brainflixpic from "../../Assets/Images/brainFlix.png";
-import capturespic from "../../Assets/Images/seniorCare.jpg";
+import capturespic from "../../Assets/Images/capturesSrnShot.png";
 
 import "./Projects.scss";
 
